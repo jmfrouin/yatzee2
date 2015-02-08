@@ -174,4 +174,13 @@
   <data name="Yatzee.Text" xml:space="preserve">
     <value>Yatzee</value>
   </data>
+  <data name="PartyIsOver" xml:space="preserve">
+    <value>The party is over !!</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>points</value>
+  </data>
+  <data name="TheOnes" xml:space="preserve">
+    <value>The 1</value>
+  </data>
 </root>

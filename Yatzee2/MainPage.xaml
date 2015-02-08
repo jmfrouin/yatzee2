@@ -17,111 +17,111 @@
         <StackPanel HorizontalAlignment="Left" Height="700" Margin="10,100,0,0" VerticalAlignment="Top" Width="700" Orientation="Horizontal">
             <StackPanel HorizontalAlignment="Left" Height="700" Margin="0,0,-60,0" VerticalAlignment="Top" Width="160">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="AnyOrder" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
+                <TextBlock x:Name="NormalOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image x:Name="Dice11" Width="32" Source="Assets/Blank.png" Tapped="Dice11_Tapped"/>
+                    <Image x:Name="Dice12" Width="32" Source="Assets/Blank.png" Tapped="Dice12_Tapped"/>
+                    <Image x:Name="Dice13" Width="32" Source="Assets/Blank.png" Tapped="Dice13_Tapped"/>
+                    <Image x:Name="Dice14" Width="32" Source="Assets/Blank.png" Tapped="Dice14_Tapped"/>
+                    <Image x:Name="Dice15" Width="32" Source="Assets/Blank.png" Tapped="Dice15_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text=""  VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
@@ -129,109 +129,109 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="TopToBottom" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
@@ -239,119 +239,119 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="BottomToTop" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
-                    <Image Width="32" Source="Resources/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="61" Margin="828,572,0,0" VerticalAlignment="Top" Width="500" Orientation="Horizontal">
-            <Image x:Name="picDice1" Width="100"/>
-            <Image x:Name="picDice2" Width="100"/>
-            <Image x:Name="picDice3" Width="100"/>
-            <Image x:Name="picDice4" Width="100"/>
-            <Image x:Name="picDice5" Width="100"/>
+            <Image x:Name="picDice1" Width="100" Tapped="picDice1_Tapped"/>
+            <Image x:Name="picDice2" Width="100" Tapped="picDice2_Tapped"/>
+            <Image x:Name="picDice3" Width="100" Tapped="picDice3_Tapped"/>
+            <Image x:Name="picDice4" Width="100" Tapped="picDice4_Tapped"/>
+            <Image x:Name="picDice5" Width="100" Tapped="picDice5_Tapped"/>
         </StackPanel>
         <Button x:Name="Roll_Dices" x:Uid="RollDices" Content="" HorizontalAlignment="Left" Margin="1191,671,0,0" VerticalAlignment="Top" Click="Roll_Dices_Button_Click"/>
         <TextBlock x:Name="labelRemainingLaunch" HorizontalAlignment="Left" Margin="887,674,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24"/>
