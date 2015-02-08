@@ -101,17 +101,17 @@ namespace Yatzee2
             switch (diceValue)
             {
                 case 1:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice1N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice1B.png"));
                 case 2:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice2N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice2B.png"));
                 case 3:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice3N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice3B.png"));
                 case 4:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice4N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice4B.png"));
                 case 5:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice5N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice5B.png"));
                 default:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice6N.png"));
+                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice6B.png"));
             }
         }
 
