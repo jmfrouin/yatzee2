@@ -129,10 +129,10 @@
   <data name="TopToBottom.Text" xml:space="preserve">
     <value>Top to bottom</value>
   </data>
- 	<data name="TheOne.Text" xml:space="preserve">
+  <data name="TheOne.Text" xml:space="preserve">
     <value>The 1</value>
   </data>
-	<data name="TheTwo.Text" xml:space="preserve">
+  <data name="TheTwo.Text" xml:space="preserve">
     <value>The 2</value>
   </data>
   <data name="TheThree.Text" xml:space="preserve">
@@ -147,5 +147,31 @@
   <data name="TheSix.Text" xml:space="preserve">
     <value>The 6</value>
   </data>
-
+  <data name="Big.Text" xml:space="preserve">
+    <value>Big</value>
+  </data>
+  <data name="FourOfAKind.Text" xml:space="preserve">
+    <value>Four of a kind</value>
+  </data>
+  <data name="Full.Text" xml:space="preserve">
+    <value>Full House</value>
+  </data>
+  <data name="LessThan11.Text" xml:space="preserve">
+    <value>Less than 11</value>
+  </data>
+  <data name="Remaining" xml:space="preserve">
+    <value>Remaining : </value>
+  </data>
+  <data name="RollDices.Content" xml:space="preserve">
+    <value>Roll Dices</value>
+  </data>
+  <data name="Small.Text" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Straight.Text" xml:space="preserve">
+    <value>Straight</value>
+  </data>
+  <data name="Yatzee.Text" xml:space="preserve">
+    <value>Yatzee</value>
+  </data>
 </root>

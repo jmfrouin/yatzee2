@@ -133,8 +133,9 @@ namespace Yatzee2
             this.picDice4.Source = SelectDicesImage(Dices[3]);
             this.picDice5.Source = SelectDicesImage(Dices[4]);
 
+            var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
             //Update labels
-            this.labelRemainingLaunch.Text = "Remaining : " + Nb.ToString();
+            this.labelRemainingLaunch.Text = loader.GetString("Remaining") + Nb.ToString();
             //this.labelDicesTotal.Text = "Total : " + dicesTotal;
         }
 

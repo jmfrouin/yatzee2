@@ -129,10 +129,10 @@
   <data name="TopToBottom.Text" xml:space="preserve">
     <value>De haut en bas</value>
   </data>
-	<data name="TheOne.Text" xml:space="preserve">
+  <data name="TheOne.Text" xml:space="preserve">
     <value>Les 1</value>
   </data>
-	<data name="TheTwo.Text" xml:space="preserve">
+  <data name="TheTwo.Text" xml:space="preserve">
     <value>Les 2</value>
   </data>
   <data name="TheThree.Text" xml:space="preserve">
@@ -146,5 +146,32 @@
   </data>
   <data name="TheSix.Text" xml:space="preserve">
     <value>Les 6</value>
+  </data>
+  <data name="Big.Text" xml:space="preserve">
+    <value>Score plus grand que Petit</value>
+  </data>
+  <data name="FourOfAKind.Text" xml:space="preserve">
+    <value>Carré</value>
+  </data>
+  <data name="Full.Text" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="LessThan11.Text" xml:space="preserve">
+    <value>Moins de 11</value>
+  </data>
+  <data name="Remaining" xml:space="preserve">
+    <value>Coups restants : </value>
+  </data>
+  <data name="RollDices.Content" xml:space="preserve">
+    <value>Lancer les dés</value>
+  </data>
+  <data name="Small.Text" xml:space="preserve">
+    <value>Petit score</value>
+  </data>
+  <data name="Straight.Text" xml:space="preserve">
+    <value>Suite</value>
+  </data>
+  <data name="Yatzee.Text" xml:space="preserve">
+    <value>Yatzee</value>
   </data>
 </root>
