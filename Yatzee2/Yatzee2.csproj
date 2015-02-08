@@ -117,6 +117,8 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\fr-FR\Resources.resw" />
     <None Include="Yatzee2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -124,20 +126,20 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
-    <Content Include="Resources\BBlank.png" />
-    <Content Include="Resources\Blank.png" />
-    <Content Include="Resources\Dice1N.png" />
-    <Content Include="Resources\Dice1S.png" />
-    <Content Include="Resources\Dice2N.png" />
-    <Content Include="Resources\Dice2S.png" />
-    <Content Include="Resources\Dice3N.png" />
-    <Content Include="Resources\Dice3S.png" />
-    <Content Include="Resources\Dice4N.png" />
-    <Content Include="Resources\Dice4S.png" />
-    <Content Include="Resources\Dice5N.png" />
-    <Content Include="Resources\Dice5S.png" />
-    <Content Include="Resources\Dice6N.png" />
-    <Content Include="Resources\Dice6S.png" />
+    <Content Include="Assets\BBlank.png" />
+    <Content Include="Assets\Blank.png" />
+    <Content Include="Assets\Dice1N.png" />
+    <Content Include="Assets\Dice1S.png" />
+    <Content Include="Assets\Dice2N.png" />
+    <Content Include="Assets\Dice2S.png" />
+    <Content Include="Assets\Dice3N.png" />
+    <Content Include="Assets\Dice3S.png" />
+    <Content Include="Assets\Dice4N.png" />
+    <Content Include="Assets\Dice4S.png" />
+    <Content Include="Assets\Dice5N.png" />
+    <Content Include="Assets\Dice5S.png" />
+    <Content Include="Assets\Dice6N.png" />
+    <Content Include="Assets\Dice6S.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

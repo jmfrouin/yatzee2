@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
+//i18n help : https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh965329.aspx
+
 namespace Yatzee2
 {
     /// <summary>
