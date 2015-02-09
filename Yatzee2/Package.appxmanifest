@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="fb144e3b-dfd8-4b99-bd36-eab3f6906c2b" Publisher="CN=jmfrouin" Version="1.0.0.0" />
+  <Identity Name="fb144e3b-dfd8-4b99-bd36-eab3f6906c2b" Publisher="CN=jmfrouin" Version="2.0.0.0" />
   <Properties>
     <DisplayName>Yatzee2</DisplayName>
     <PublisherDisplayName>jmfrouin</PublisherDisplayName>

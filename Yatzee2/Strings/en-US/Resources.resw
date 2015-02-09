@@ -234,4 +234,7 @@
   <data name="YatzeeStr" xml:space="preserve">
     <value>Yatzee</value>
   </data>
+  <data name="TitleStr" xml:space="preserve">
+    <value>Yatzee</value>
+  </data>
 </root>

@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -56,9 +46,19 @@ namespace Yatzee2
         int DescendingBonus;
         #endregion
 
+        public string GetApplicationVersion()
+        {
+
+            var ver = Windows.ApplicationModel.Package.Current.Id.Version;
+            return ver.Major.ToString() + "." + ver.Minor.ToString() + "." + ver.Build.ToString() + "." + ver.Revision.ToString();
+        }
+
         public MainPage()
         {
             this.InitializeComponent();
+            var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+            //Update labels
+            this.textTitle.Text = loader.GetString("TitleStr") +  " v" +GetApplicationVersion();
             Reset();
         }
 
@@ -70,8 +70,8 @@ namespace Yatzee2
             Played = new bool[3, 13];
             Nb = 3;
             Total = 39;
-            Ascending = 0;
-            Descending = 12;
+            Ascending = 12;
+            Descending = 0;
             ShootAgain = true;
             rndNumbers = new Random();
             //Set Background colors
@@ -1143,27 +1143,27 @@ namespace Yatzee2
 
         private void Dice61_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ScoreNormalFives();
+            ScoreNormalSixs();
         }
 
         private void Dice62_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ScoreNormalFives();
+            ScoreNormalSixs();
         }
 
         private void Dice63_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ScoreNormalFives();
+            ScoreNormalSixs();
         }
 
         private void Dice64_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ScoreNormalFives();
+            ScoreNormalSixs();
         }
 
         private void Dice65_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ScoreNormalFives();
+            ScoreNormalSixs();
         }
         #endregion
 
