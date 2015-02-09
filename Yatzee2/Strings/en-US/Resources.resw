@@ -183,19 +183,55 @@
   <data name="TheOnes" xml:space="preserve">
     <value>The 1</value>
   </data>
+  <data name="Bigger" xml:space="preserve">
+    <value>Big score</value>
+  </data>
   <data name="Bonus" xml:space="preserve">
     <value>Bonus (If score &gt; 40)</value>
   </data>
   <data name="Bonus1to6.Text" xml:space="preserve">
     <value>Bonus (If score &gt; 40)</value>
   </data>
+  <data name="FourOfAKindStr" xml:space="preserve">
+    <value>Four of a kind</value>
+  </data>
+  <data name="FullHouseStr" xml:space="preserve">
+    <value>Full house</value>
+  </data>
   <data name="GrandTotal" xml:space="preserve">
     <value>Grand total</value>
+  </data>
+  <data name="Less11" xml:space="preserve">
+    <value>Less than 11</value>
+  </data>
+  <data name="SmallStr" xml:space="preserve">
+    <value>Small score</value>
+  </data>
+  <data name="StraightStr" xml:space="preserve">
+    <value>Straight</value>
   </data>
   <data name="SubTotal" xml:space="preserve">
     <value>Subtotal</value>
   </data>
+  <data name="TheFives" xml:space="preserve">
+    <value>The 5</value>
+  </data>
+  <data name="TheFours" xml:space="preserve">
+    <value>The 4</value>
+  </data>
+  <data name="TheSixs" xml:space="preserve">
+    <value>The 6</value>
+  </data>
+  <data name="TheThrees" xml:space="preserve">
+    <value>The 3</value>
+  </data>
+  <data name="TheTwos" xml:space="preserve">
+    <value>The 2</value>
+  </data>
   <data name="WholeTotal" xml:space="preserve">
     <value>Total</value>
+  </data>
+  <data name="YatzeeStr" xml:space="preserve">
+    <value>Yatzee</value>
   </data>
 </root>
