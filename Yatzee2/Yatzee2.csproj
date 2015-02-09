@@ -122,11 +122,17 @@
     <None Include="Yatzee2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Dice1B.png" />
     <Content Include="Assets\Dice1R.png" />
+    <Content Include="Assets\Dice2B.png" />
     <Content Include="Assets\Dice2R.png" />
+    <Content Include="Assets\Dice3B.png" />
     <Content Include="Assets\Dice3R.png" />
+    <Content Include="Assets\Dice4B.png" />
     <Content Include="Assets\Dice4R.png" />
+    <Content Include="Assets\Dice5B.png" />
     <Content Include="Assets\Dice5R.png" />
+    <Content Include="Assets\Dice6B.png" />
     <Content Include="Assets\Dice6R.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
@@ -134,17 +140,11 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\BBlank.png" />
     <Content Include="Assets\Blank.png" />
-    <Content Include="Assets\Dice1N.png" />
     <Content Include="Assets\Dice1S.png" />
-    <Content Include="Assets\Dice2N.png" />
     <Content Include="Assets\Dice2S.png" />
-    <Content Include="Assets\Dice3N.png" />
     <Content Include="Assets\Dice3S.png" />
-    <Content Include="Assets\Dice4N.png" />
     <Content Include="Assets\Dice4S.png" />
-    <Content Include="Assets\Dice5N.png" />
     <Content Include="Assets\Dice5S.png" />
-    <Content Include="Assets\Dice6N.png" />
     <Content Include="Assets\Dice6S.png" />
   </ItemGroup>
   <ItemGroup>

@@ -27,53 +27,53 @@
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice21" Width="32" Source="Assets/Blank.png" Tapped="Dice21_Tapped"/>
+                    <Image x:Name="Dice22" Width="32" Source="Assets/Blank.png" Tapped="Dice22_Tapped"/>
+                    <Image x:Name="Dice23" Width="32" Source="Assets/Blank.png" Tapped="Dice23_Tapped"/>
+                    <Image x:Name="Dice24" Width="32" Source="Assets/Blank.png" Tapped="Dice24_Tapped"/>
+                    <Image x:Name="Dice25" Width="32" Source="Assets/Blank.png" Tapped="Dice25_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice31" Width="32" Source="Assets/Blank.png" Tapped="Dice31_Tapped"/>
+                    <Image x:Name="Dice32" Width="32" Source="Assets/Blank.png" Tapped="Dice32_Tapped"/>
+                    <Image x:Name="Dice33" Width="32" Source="Assets/Blank.png" Tapped="Dice33_Tapped"/>
+                    <Image x:Name="Dice34" Width="32" Source="Assets/Blank.png" Tapped="Dice34_Tapped"/>
+                    <Image x:Name="Dice35" Width="32" Source="Assets/Blank.png" Tapped="Dice35_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice41" Width="32" Source="Assets/Blank.png" Tapped="Dice41_Tapped"/>
+                    <Image x:Name="Dice42" Width="32" Source="Assets/Blank.png" Tapped="Dice42_Tapped"/>
+                    <Image x:Name="Dice43" Width="32" Source="Assets/Blank.png" Tapped="Dice43_Tapped"/>
+                    <Image x:Name="Dice44" Width="32" Source="Assets/Blank.png" Tapped="Dice44_Tapped"/>
+                    <Image x:Name="Dice45" Width="32" Source="Assets/Blank.png" Tapped="Dice45_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice51" Width="32" Source="Assets/Blank.png" Tapped="Dice51_Tapped"/>
+                    <Image x:Name="Dice52" Width="32" Source="Assets/Blank.png" Tapped="Dice52_Tapped"/>
+                    <Image x:Name="Dice53" Width="32" Source="Assets/Blank.png" Tapped="Dice53_Tapped"/>
+                    <Image x:Name="Dice54" Width="32" Source="Assets/Blank.png" Tapped="Dice54_Tapped"/>
+                    <Image x:Name="Dice55" Width="32" Source="Assets/Blank.png" Tapped="Dice55_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice61" Width="32" Source="Assets/Blank.png" Tapped="Dice61_Tapped"/>
+                    <Image x:Name="Dice62" Width="32" Source="Assets/Blank.png" Tapped="Dice62_Tapped"/>
+                    <Image x:Name="Dice63" Width="32" Source="Assets/Blank.png" Tapped="Dice63_Tapped"/>
+                    <Image x:Name="Dice64" Width="32" Source="Assets/Blank.png" Tapped="Dice64_Tapped"/>
+                    <Image x:Name="Dice65" Width="32" Source="Assets/Blank.png" Tapped="Dice65_Tapped"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text=""  VerticalAlignment="Top"/>
+                <TextBlock x:Name="textNormalSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textNormalBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
-                    <Image Width="32" Source="Assets/Blank.png"/>
+                    <Image x:Name="Dice71" Width="32" Source="Assets/Blank.png" Tapped="Dice71_Tapped"/>
+                    <Image x:Name="Dice72" Width="32" Source="Assets/Blank.png" Tapped="Dice72_Tapped"/>
+                    <Image x:Name="Dice73" Width="32" Source="Assets/Blank.png" Tapped="Dice73_Tapped"/>
+                    <Image x:Name="Dice74" Width="32" Source="Assets/Blank.png" Tapped="Dice74_Tapped"/>
+                    <Image x:Name="Dice75" Width="32" Source="Assets/Blank.png" Tapped="Dice75_Tapped"/>
                 </StackPanel>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
@@ -123,7 +123,8 @@
                     <Image Width="32" Source="Assets/Blank.png"/>
                     <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textNormalSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textNormalTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Height="700" Margin="160,0,-60,0" VerticalAlignment="Top" Width="160">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="TopToBottom" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
@@ -175,8 +176,8 @@
                     <Image Width="32" Source="Assets/Blank.png"/>
                     <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textAscendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textAscendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
                     <Image Width="32" Source="Assets/Blank.png"/>
@@ -233,7 +234,8 @@
                     <Image Width="32" Source="Assets/Blank.png"/>
                     <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textAscendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textAscendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Height="700" Margin="160,0,-60,0" VerticalAlignment="Top" Width="160">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="BottomToTop" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
@@ -285,8 +287,8 @@
                     <Image Width="32" Source="Assets/Blank.png"/>
                     <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bonus (+50) :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textDescendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textDescendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
                 <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
                     <Image Width="32" Source="Assets/Blank.png"/>
@@ -343,7 +345,8 @@
                     <Image Width="32" Source="Assets/Blank.png"/>
                     <Image Width="32" Source="Assets/Blank.png"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textDescendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textDescendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="61" Margin="828,572,0,0" VerticalAlignment="Top" Width="500" Orientation="Horizontal">
@@ -356,5 +359,6 @@
         <Button x:Name="Roll_Dices" x:Uid="RollDices" Content="" HorizontalAlignment="Left" Margin="1191,671,0,0" VerticalAlignment="Top" Click="Roll_Dices_Button_Click"/>
         <TextBlock x:Name="labelRemainingLaunch" HorizontalAlignment="Left" Margin="887,674,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24"/>
         <TextBlock x:Name="labelDicesTotal" HorizontalAlignment="Left" Margin="887,708,0,0" TextWrapping="Wrap" Text="Total : " VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="textGrandTotal" HorizontalAlignment="Left" Margin="887,742,0,0" TextWrapping="Wrap" Text="Grand Total : " VerticalAlignment="Top" FontSize="24"/>
     </Grid>
 </Page>

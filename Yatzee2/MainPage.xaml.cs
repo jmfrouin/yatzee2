@@ -24,6 +24,7 @@ namespace Yatzee2
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        #region Data Members
         int[] Dices;
         bool[] Lock;
         bool ShootAgain;
@@ -53,6 +54,7 @@ namespace Yatzee2
         int DescendingSubTotal2;
         int DescendingTotal;
         int DescendingBonus;
+        #endregion
 
         public MainPage()
         {
@@ -226,12 +228,13 @@ namespace Yatzee2
 
         private void FinalizeATurn()
         {
+            var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
             Nb = 3;
             Total--;
             if (Total == 0)
             {
                 //MessageBox.Show("!!\nPlease click on New game.", "Attention");
-                /*var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+                /*
                 
                 // Create the message dialog and set its content
                 var messageDialog = new Windows.UI.Popups.MessageDialog(loader.GetString("PartyIsOver"));
@@ -275,28 +278,26 @@ namespace Yatzee2
             AscendingTotal = AscendingSubTotal1 + AscendingSubTotal2 + AscendingBonus;
             DescendingTotal = DescendingSubTotal1 + DescendingSubTotal2 + DescendingBonus;
 
-            /*
             //Update scores
-            labelNormalSubTotal1.Text = "SubTotal : " + NormalSubTotal1.ToString();
-            labelNormalSubTotal2.Text = "SubTotal : " + NormalSubTotal2.ToString();
-            labelNormalBonus.Text = "Bonus : " + NormalBonus.ToString();
-            labelNormalTotal.Text = "Total : " + NormalTotal.ToString();
+            textNormalSubTotal1.Text = loader.GetString("SubTotal") + " : " + NormalSubTotal1.ToString();
+            textNormalSubTotal2.Text = loader.GetString("SubTotal") + " : " + NormalSubTotal2.ToString();
+            textNormalBonus.Text = loader.GetString("Bonus") + " : " + NormalBonus.ToString();
+            textNormalTotal.Text = loader.GetString("WholeTotal") + " : " + NormalTotal.ToString();
 
-            labelAscendingSubTotal1.Text = "SubTotal : " + AscendingSubTotal1.ToString();
-            labelAscendingSubTotal2.Text = "SubTotal : " + AscendingSubTotal2.ToString();
-            labelAscendingBonus.Text = "Bonus : " + AscendingBonus.ToString();
-            labelAscendingTotal.Text = "Total : " + AscendingTotal.ToString();
+            textAscendingSubTotal1.Text = loader.GetString("SubTotal") + " : " + AscendingSubTotal1.ToString();
+            textAscendingSubTotal2.Text = loader.GetString("SubTotal") + " : " + AscendingSubTotal2.ToString();
+            textAscendingBonus.Text = loader.GetString("Bonus") + " : " + AscendingBonus.ToString();
+            textAscendingTotal.Text = loader.GetString("WholeTotal") + " : " + AscendingTotal.ToString();
 
-            labelDescendingSubTotal1.Text = "SubTotal : " + DescendingSubTotal1.ToString();
-            labelDescendingSubTotal2.Text = "SubTotal : " + DescendingSubTotal2.ToString();
-            labelDescendingBonus.Text = "Bonus : " + DescendingBonus.ToString();
-            labelDescendingTotal.Text = "Total : " + DescendingTotal.ToString();
+            textDescendingSubTotal1.Text = "SubTotal : " + DescendingSubTotal1.ToString();
+            textDescendingSubTotal2.Text = "SubTotal : " + DescendingSubTotal2.ToString();
+            textDescendingBonus.Text = "Bonus : " + DescendingBonus.ToString();
+            textDescendingTotal.Text = "Total : " + DescendingTotal.ToString();
 
             int BigTotal = NormalTotal + AscendingTotal + DescendingTotal;
-            labelGrandTotal.Text = "Score = " + BigTotal.ToString();
+            textGrandTotal.Text = "Score = " + BigTotal.ToString();
 
-            LaunchDicesButton.Show();
-             * /
+            this.Roll_Dices.IsEnabled = true;
 
             //Reset dices
             /*picDice1.Image = Properties.Resources.BBlank;
@@ -308,13 +309,62 @@ namespace Yatzee2
             //Reset infos
             this.labelRemainingLaunch.Text = "";
             this.labelDicesTotal.Text = "";
-
-            //Refresh
-            //Refresh();
         }
 
         #region ScoreNormalOnes
         private void ScoreNormalOnes()
+        {
+            if (Played[0, 0]) return;
+
+            this.Dice11.Source = SelectSmallDicesImage(Dices[0]);
+            this.Dice12.Source = SelectSmallDicesImage(Dices[1]);
+            this.Dice13.Source = SelectSmallDicesImage(Dices[2]);
+            this.Dice14.Source = SelectSmallDicesImage(Dices[3]);
+            this.Dice15.Source = SelectSmallDicesImage(Dices[4]);
+
+            //Calc score
+            int Temp = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                Temp += Dices[i] == 1 ? 1 : 0;
+            }
+            NormalSubTotal1 += Temp;
+
+            var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+            this.NormalOne.Text = loader.GetString("TheOnes") + " : " + Temp.ToString() + " " + loader.GetString("Points");
+
+            FinalizeATurn();
+            Played[0, 0] = true;
+        }
+
+        private void Dice11_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ScoreNormalOnes();
+        }
+
+        private void Dice12_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ScoreNormalOnes();
+        }
+
+        private void Dice13_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ScoreNormalOnes();
+        }
+
+        private void Dice14_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ScoreNormalOnes();
+        }
+
+        private void Dice15_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ScoreNormalOnes();
+        }
+        #endregion
+
+        #region ScoreNormalTwos
+        private void ScoreNormalTwos()
         {
             if (Played[0, 0]) return;
 
