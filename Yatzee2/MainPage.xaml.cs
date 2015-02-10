@@ -179,6 +179,7 @@ namespace Yatzee2
             //Update labels
             this.labelRemainingLaunch.Text = loader.GetString("Remaining") + Nb.ToString();
             this.labelDicesTotal.Text = "Total : " + dicesTotal;
+            ShootAgain = true;
         }
 
         private void picDice1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -314,6 +315,8 @@ namespace Yatzee2
         #region ScoreNormalOnes
         private void ScoreNormalOnes()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 0]) return;
 
             this.Dice11.Source = SelectSmallDicesImage(Dices[0]);
@@ -366,6 +369,8 @@ namespace Yatzee2
         #region ScoreDescOnes
         private void ScoreDescOnes()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 0]) return;
             if (Descending != 0) return;
             Descending++;
@@ -420,6 +425,8 @@ namespace Yatzee2
         #region ScoreAscOnes
         private void ScoreAscOnes()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 0]) return;
             if (Ascending != 0) return;
 
@@ -474,6 +481,8 @@ namespace Yatzee2
         #region ScoreNormalTwos
         private void ScoreNormalTwos()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 1]) return;
 
             this.Dice21.Source = SelectSmallDicesImage(Dices[0]);
@@ -526,6 +535,8 @@ namespace Yatzee2
         #region ScoreDescTwos
         private void ScoreDescTwos()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 1]) return;
             if (Descending != 1) return;
             Descending++;
@@ -580,6 +591,8 @@ namespace Yatzee2
         #region ScoreAscTwos
         private void ScoreAscTwos()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 1]) return;
             if (Ascending != 1) return;
             Ascending--;
@@ -635,6 +648,8 @@ namespace Yatzee2
         #region ScoreNormalThrees
         private void ScoreNormalThrees()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 2]) return;
 
             this.Dice31.Source = SelectSmallDicesImage(Dices[0]);
@@ -687,6 +702,8 @@ namespace Yatzee2
         #region ScoreDescThrees
         private void ScoreDescThrees()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 2]) return;
             if (Descending != 2) return;
             Descending++;
@@ -741,6 +758,8 @@ namespace Yatzee2
         #region ScoreAscThrees
         private void ScoreAscThrees()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 2]) return;
             if (Ascending != 2) return;
             Ascending--;
@@ -796,6 +815,8 @@ namespace Yatzee2
         #region ScoreNormalFours
         private void ScoreNormalFours()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 3]) return;
 
             this.Dice41.Source = SelectSmallDicesImage(Dices[0]);
@@ -848,6 +869,8 @@ namespace Yatzee2
         #region ScoreDescFours
         private void ScoreDescFours()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 3]) return;
             if (Descending != 3) return;
             Descending++;
@@ -902,6 +925,8 @@ namespace Yatzee2
         #region ScoreAscFours
         private void ScoreAscFours()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 3]) return;
             if (Ascending != 3) return;
             Ascending--;
@@ -957,6 +982,8 @@ namespace Yatzee2
         #region ScoreNormalFives
         private void ScoreNormalFives()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 4]) return;
 
             this.Dice51.Source = SelectSmallDicesImage(Dices[0]);
@@ -1009,6 +1036,8 @@ namespace Yatzee2
         #region ScoreDescFives
         private void ScoreDescFives()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 4]) return;
             if (Descending != 4) return;
             Descending++;
@@ -1063,6 +1092,8 @@ namespace Yatzee2
         #region ScoreAscFives
         private void ScoreAscFives()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 4]) return;
             if (Ascending != 4) return;
             Ascending--;
@@ -1118,6 +1149,8 @@ namespace Yatzee2
         #region ScoreNormalSixs
         private void ScoreNormalSixs()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 5]) return;
 
             this.Dice61.Source = SelectSmallDicesImage(Dices[0]);
@@ -1170,6 +1203,8 @@ namespace Yatzee2
         #region ScoreDescSixs
         private void ScoreDescSixs()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 5]) return;
             if (Descending != 5) return;
             Descending++;
@@ -1224,6 +1259,8 @@ namespace Yatzee2
         #region ScoreAscSixs
         private void ScoreAscSixs()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 5]) return;
             if (Ascending != 5) return;
             Ascending--;
@@ -1279,6 +1316,8 @@ namespace Yatzee2
         #region ScoreNormalLess11
         private void ScoreNormalLess11()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 6]) return;
 
             this.Dice71.Source = SelectSmallDicesImage(Dices[0]);
@@ -1339,6 +1378,8 @@ namespace Yatzee2
         #region ScoreDescLess11
         private void ScoreDescLess11()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 6]) return;
             if (Descending != 6) return;
             Descending++;
@@ -1401,6 +1442,8 @@ namespace Yatzee2
         #region ScoreAscLess11
         private void ScoreAscLess11()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 6]) return;
             if (Ascending != 6) return;
             Ascending--;
@@ -1464,6 +1507,8 @@ namespace Yatzee2
         #region ScoreNormalSmall
         private void ScoreNormalSmall()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 7]) return;
 
             this.Dice81.Source = SelectSmallDicesImage(Dices[0]);
@@ -1529,6 +1574,8 @@ namespace Yatzee2
         #region ScoreDescSmall
         private void ScoreDescSmall()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 7]) return;
             if (Descending != 7) return;
             Descending++;
@@ -1596,6 +1643,8 @@ namespace Yatzee2
         #region ScoreAscSmall
         private void ScoreAscSmall()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 7]) return;
             if (Ascending != 7) return;
             Ascending--;
@@ -1664,6 +1713,8 @@ namespace Yatzee2
         #region ScoreNormalBigger
         private void ScoreNormalBigger()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 8]) return;
 
             this.Dice91.Source = SelectSmallDicesImage(Dices[0]);
@@ -1730,6 +1781,8 @@ namespace Yatzee2
         #region ScoreDescBigger
         private void ScoreDescBigger()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 8]) return;
             if (Descending != 8) return;
             Descending++;
@@ -1798,6 +1851,8 @@ namespace Yatzee2
         #region ScoreAscBigger
         private void ScoreAscBigger()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 8]) return;
             if (Ascending != 8) return;
             Ascending--;
@@ -1867,6 +1922,8 @@ namespace Yatzee2
         #region ScoreNormalFourOfAKind
         private void ScoreNormalFourOfAKind()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 9]) return;
 
             this.Dice101.Source = SelectSmallDicesImage(Dices[0]);
@@ -1929,6 +1986,8 @@ namespace Yatzee2
         #region ScoreDescFourOfAKind
         private void ScoreDescFourOfAKind()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 9]) return;
             if (Descending != 9) return;
             Descending++;
@@ -1993,6 +2052,8 @@ namespace Yatzee2
         #region ScoreAscFourOfAKind
         private void ScoreAscFourOfAKind()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 9]) return;
             if (Ascending != 9) return;
             Ascending--;
@@ -2058,6 +2119,8 @@ namespace Yatzee2
         #region ScoreNormalFullHousse
         private void ScoreNormalFullHousse()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 10]) return;
 
             this.Dice111.Source = SelectSmallDicesImage(Dices[0]);
@@ -2131,6 +2194,8 @@ namespace Yatzee2
         #region ScoreDescFullHousse
         private void ScoreDescFullHousse()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 10]) return;
             if (Descending != 10) return;
             Descending++;
@@ -2206,6 +2271,8 @@ namespace Yatzee2
         #region ScoreAscFullHousse
         private void ScoreAscFullHousse()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 10]) return;
             if (Ascending != 10) return;
             Ascending--;
@@ -2282,6 +2349,8 @@ namespace Yatzee2
         #region ScoreNormalStraight
         private void ScoreNormalStraight()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 11]) return;
 
             this.Dice121.Source = SelectSmallDicesImage(Dices[0]);
@@ -2362,6 +2431,8 @@ namespace Yatzee2
         #region ScoreDescStraight
         private void ScoreDescStraight()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 11]) return;
             if (Descending != 11) return;
             Descending++;
@@ -2444,6 +2515,8 @@ namespace Yatzee2
         #region ScoreAscStraight
         private void ScoreAscStraight()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[2, 11]) return;
             if (Ascending != 11) return;
             Ascending--;
@@ -2527,6 +2600,8 @@ namespace Yatzee2
         #region ScoreNormalYatzee
         private void ScoreNormalYatzee()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[0, 12]) return;
 
             this.Dice131.Source = SelectSmallDicesImage(Dices[0]);
@@ -2589,6 +2664,8 @@ namespace Yatzee2
         #region ScoreDescYatzee
         private void ScoreDescYatzee()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
             if (Played[1, 12]) return;
             if (Descending != 12) return;
             Descending++;
@@ -2653,6 +2730,9 @@ namespace Yatzee2
         #region ScoreAscYatzee
         private void ScoreAscYatzee()
         {
+            if (ShootAgain) ShootAgain = false;
+            else return;
+
             if (Played[2, 12]) return;
             if (Ascending != 12) return;
             Ascending--;

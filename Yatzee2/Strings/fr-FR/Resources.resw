@@ -148,7 +148,7 @@
     <value>Les 6</value>
   </data>
   <data name="Big.Text" xml:space="preserve">
-    <value>Score plus grand que Petit</value>
+    <value>Grand score</value>
   </data>
   <data name="FourOfAKind.Text" xml:space="preserve">
     <value>Carré</value>

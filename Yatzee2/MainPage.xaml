@@ -13,352 +13,366 @@
                 <Grid Height="100" Width="100"/>
             </Flyout>
         </FlyoutBase.AttachedFlyout>
-        <TextBlock x:Name="textTitle" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="Title" Text="" VerticalAlignment="Top" FontSize="72" FontFamily="Andalus"/>
-        <StackPanel HorizontalAlignment="Left" Height="700" Margin="10,100,0,0" VerticalAlignment="Top" Width="700" Orientation="Horizontal">
-            <StackPanel HorizontalAlignment="Left" Height="700" Margin="0,0,-60,0" VerticalAlignment="Top" Width="160">
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="AnyOrder" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
-                <TextBlock x:Name="NormalOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice11" Width="32" Source="Assets/Blank.png" Tapped="Dice11_Tapped"/>
-                    <Image x:Name="Dice12" Width="32" Source="Assets/Blank.png" Tapped="Dice12_Tapped"/>
-                    <Image x:Name="Dice13" Width="32" Source="Assets/Blank.png" Tapped="Dice13_Tapped"/>
-                    <Image x:Name="Dice14" Width="32" Source="Assets/Blank.png" Tapped="Dice14_Tapped"/>
-                    <Image x:Name="Dice15" Width="32" Source="Assets/Blank.png" Tapped="Dice15_Tapped"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <TextBlock x:Name="textTitle" HorizontalAlignment="Center" TextWrapping="Wrap" x:Uid="Title" Text="" VerticalAlignment="Top" FontSize="72" FontFamily="Andalus"/>
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="AnyOrder" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="NormalOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice11" Width="32" Source="Assets/Blank.png" Tapped="Dice11_Tapped"/>
+                        <Image x:Name="Dice12" Width="32" Source="Assets/Blank.png" Tapped="Dice12_Tapped"/>
+                        <Image x:Name="Dice13" Width="32" Source="Assets/Blank.png" Tapped="Dice13_Tapped"/>
+                        <Image x:Name="Dice14" Width="32" Source="Assets/Blank.png" Tapped="Dice14_Tapped"/>
+                        <Image x:Name="Dice15" Width="32" Source="Assets/Blank.png" Tapped="Dice15_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice21" Width="32" Source="Assets/Blank.png" Tapped="Dice21_Tapped"/>
+                        <Image x:Name="Dice22" Width="32" Source="Assets/Blank.png" Tapped="Dice22_Tapped"/>
+                        <Image x:Name="Dice23" Width="32" Source="Assets/Blank.png" Tapped="Dice23_Tapped"/>
+                        <Image x:Name="Dice24" Width="32" Source="Assets/Blank.png" Tapped="Dice24_Tapped"/>
+                        <Image x:Name="Dice25" Width="32" Source="Assets/Blank.png" Tapped="Dice25_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice31" Width="32" Source="Assets/Blank.png" Tapped="Dice31_Tapped"/>
+                        <Image x:Name="Dice32" Width="32" Source="Assets/Blank.png" Tapped="Dice32_Tapped"/>
+                        <Image x:Name="Dice33" Width="32" Source="Assets/Blank.png" Tapped="Dice33_Tapped"/>
+                        <Image x:Name="Dice34" Width="32" Source="Assets/Blank.png" Tapped="Dice34_Tapped"/>
+                        <Image x:Name="Dice35" Width="32" Source="Assets/Blank.png" Tapped="Dice35_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice41" Width="32" Source="Assets/Blank.png" Tapped="Dice41_Tapped"/>
+                        <Image x:Name="Dice42" Width="32" Source="Assets/Blank.png" Tapped="Dice42_Tapped"/>
+                        <Image x:Name="Dice43" Width="32" Source="Assets/Blank.png" Tapped="Dice43_Tapped"/>
+                        <Image x:Name="Dice44" Width="32" Source="Assets/Blank.png" Tapped="Dice44_Tapped"/>
+                        <Image x:Name="Dice45" Width="32" Source="Assets/Blank.png" Tapped="Dice45_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice51" Width="32" Source="Assets/Blank.png" Tapped="Dice51_Tapped"/>
+                        <Image x:Name="Dice52" Width="32" Source="Assets/Blank.png" Tapped="Dice52_Tapped"/>
+                        <Image x:Name="Dice53" Width="32" Source="Assets/Blank.png" Tapped="Dice53_Tapped"/>
+                        <Image x:Name="Dice54" Width="32" Source="Assets/Blank.png" Tapped="Dice54_Tapped"/>
+                        <Image x:Name="Dice55" Width="32" Source="Assets/Blank.png" Tapped="Dice55_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice61" Width="32" Source="Assets/Blank.png" Tapped="Dice61_Tapped"/>
+                        <Image x:Name="Dice62" Width="32" Source="Assets/Blank.png" Tapped="Dice62_Tapped"/>
+                        <Image x:Name="Dice63" Width="32" Source="Assets/Blank.png" Tapped="Dice63_Tapped"/>
+                        <Image x:Name="Dice64" Width="32" Source="Assets/Blank.png" Tapped="Dice64_Tapped"/>
+                        <Image x:Name="Dice65" Width="32" Source="Assets/Blank.png" Tapped="Dice65_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textNormalSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textNormalBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="NormalTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice21" Width="32" Source="Assets/Blank.png" Tapped="Dice21_Tapped"/>
-                    <Image x:Name="Dice22" Width="32" Source="Assets/Blank.png" Tapped="Dice22_Tapped"/>
-                    <Image x:Name="Dice23" Width="32" Source="Assets/Blank.png" Tapped="Dice23_Tapped"/>
-                    <Image x:Name="Dice24" Width="32" Source="Assets/Blank.png" Tapped="Dice24_Tapped"/>
-                    <Image x:Name="Dice25" Width="32" Source="Assets/Blank.png" Tapped="Dice25_Tapped"/>
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="AnyOrder" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="NormalLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice71" Width="32" Source="Assets/Blank.png" Tapped="Dice71_Tapped"/>
+                        <Image x:Name="Dice72" Width="32" Source="Assets/Blank.png" Tapped="Dice72_Tapped"/>
+                        <Image x:Name="Dice73" Width="32" Source="Assets/Blank.png" Tapped="Dice73_Tapped"/>
+                        <Image x:Name="Dice74" Width="32" Source="Assets/Blank.png" Tapped="Dice74_Tapped"/>
+                        <Image x:Name="Dice75" Width="32" Source="Assets/Blank.png" Tapped="Dice75_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice81" Width="32" Source="Assets/Blank.png" Tapped="Dice81_Tapped"/>
+                        <Image x:Name="Dice82" Width="32" Source="Assets/Blank.png" Tapped="Dice82_Tapped"/>
+                        <Image x:Name="Dice83" Width="32" Source="Assets/Blank.png" Tapped="Dice83_Tapped"/>
+                        <Image x:Name="Dice84" Width="32" Source="Assets/Blank.png" Tapped="Dice84_Tapped"/>
+                        <Image x:Name="Dice85" Width="32" Source="Assets/Blank.png" Tapped="Dice85_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice91" Width="32" Source="Assets/Blank.png" Tapped="Dice91_Tapped"/>
+                        <Image x:Name="Dice92" Width="32" Source="Assets/Blank.png" Tapped="Dice92_Tapped"/>
+                        <Image x:Name="Dice93" Width="32" Source="Assets/Blank.png" Tapped="Dice93_Tapped"/>
+                        <Image x:Name="Dice94" Width="32" Source="Assets/Blank.png" Tapped="Dice94_Tapped"/>
+                        <Image x:Name="Dice95" Width="32" Source="Assets/Blank.png" Tapped="Dice95_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice101" Width="32" Source="Assets/Blank.png" Tapped="Dice101_Tapped"/>
+                        <Image x:Name="Dice102" Width="32" Source="Assets/Blank.png" Tapped="Dice102_Tapped"/>
+                        <Image x:Name="Dice103" Width="32" Source="Assets/Blank.png" Tapped="Dice103_Tapped"/>
+                        <Image x:Name="Dice104" Width="32" Source="Assets/Blank.png" Tapped="Dice104_Tapped"/>
+                        <Image x:Name="Dice105" Width="32" Source="Assets/Blank.png" Tapped="Dice105_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice111" Width="32" Source="Assets/Blank.png" Tapped="Dice111_Tapped"/>
+                        <Image x:Name="Dice112" Width="32" Source="Assets/Blank.png" Tapped="Dice112_Tapped"/>
+                        <Image x:Name="Dice113" Width="32" Source="Assets/Blank.png" Tapped="Dice113_Tapped"/>
+                        <Image x:Name="Dice114" Width="32" Source="Assets/Blank.png" Tapped="Dice114_Tapped"/>
+                        <Image x:Name="Dice115" Width="32" Source="Assets/Blank.png" Tapped="Dice115_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice121" Width="32" Source="Assets/Blank.png" Tapped="Dice121_Tapped"/>
+                        <Image x:Name="Dice122" Width="32" Source="Assets/Blank.png" Tapped="Dice122_Tapped"/>
+                        <Image x:Name="Dice123" Width="32" Source="Assets/Blank.png" Tapped="Dice123_Tapped"/>
+                        <Image x:Name="Dice124" Width="32" Source="Assets/Blank.png" Tapped="Dice124_Tapped"/>
+                        <Image x:Name="Dice125" Width="32" Source="Assets/Blank.png" Tapped="Dice125_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="NormalYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice131" Width="32" Source="Assets/Blank.png" Tapped="Dice131_Tapped"/>
+                        <Image x:Name="Dice132" Width="32" Source="Assets/Blank.png" Tapped="Dice132_Tapped"/>
+                        <Image x:Name="Dice133" Width="32" Source="Assets/Blank.png" Tapped="Dice133_Tapped"/>
+                        <Image x:Name="Dice134" Width="32" Source="Assets/Blank.png" Tapped="Dice134_Tapped"/>
+                        <Image x:Name="Dice135" Width="32" Source="Assets/Blank.png" Tapped="Dice135_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textNormalSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textNormalTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="NormalThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice31" Width="32" Source="Assets/Blank.png" Tapped="Dice31_Tapped"/>
-                    <Image x:Name="Dice32" Width="32" Source="Assets/Blank.png" Tapped="Dice32_Tapped"/>
-                    <Image x:Name="Dice33" Width="32" Source="Assets/Blank.png" Tapped="Dice33_Tapped"/>
-                    <Image x:Name="Dice34" Width="32" Source="Assets/Blank.png" Tapped="Dice34_Tapped"/>
-                    <Image x:Name="Dice35" Width="32" Source="Assets/Blank.png" Tapped="Dice35_Tapped"/>
+
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="TopToBottom" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="DescOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice141" Width="32" Source="Assets/Blank.png" Tapped="Dice141_Tapped"/>
+                        <Image x:Name="Dice142" Width="32" Source="Assets/Blank.png" Tapped="Dice142_Tapped"/>
+                        <Image x:Name="Dice143" Width="32" Source="Assets/Blank.png" Tapped="Dice143_Tapped"/>
+                        <Image x:Name="Dice144" Width="32" Source="Assets/Blank.png" Tapped="Dice144_Tapped"/>
+                        <Image x:Name="Dice145" Width="32" Source="Assets/Blank.png" Tapped="Dice145_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice151" Width="32" Source="Assets/Blank.png" Tapped="Dice151_Tapped"/>
+                        <Image x:Name="Dice152" Width="32" Source="Assets/Blank.png" Tapped="Dice152_Tapped"/>
+                        <Image x:Name="Dice153" Width="32" Source="Assets/Blank.png" Tapped="Dice153_Tapped"/>
+                        <Image x:Name="Dice154" Width="32" Source="Assets/Blank.png" Tapped="Dice154_Tapped"/>
+                        <Image x:Name="Dice155" Width="32" Source="Assets/Blank.png" Tapped="Dice155_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice161" Width="32" Source="Assets/Blank.png" Tapped="Dice161_Tapped"/>
+                        <Image x:Name="Dice162" Width="32" Source="Assets/Blank.png" Tapped="Dice162_Tapped"/>
+                        <Image x:Name="Dice163" Width="32" Source="Assets/Blank.png" Tapped="Dice163_Tapped"/>
+                        <Image x:Name="Dice164" Width="32" Source="Assets/Blank.png" Tapped="Dice164_Tapped"/>
+                        <Image x:Name="Dice165" Width="32" Source="Assets/Blank.png" Tapped="Dice165_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice171" Width="32" Source="Assets/Blank.png" Tapped="Dice171_Tapped"/>
+                        <Image x:Name="Dice172" Width="32" Source="Assets/Blank.png" Tapped="Dice172_Tapped"/>
+                        <Image x:Name="Dice173" Width="32" Source="Assets/Blank.png" Tapped="Dice173_Tapped"/>
+                        <Image x:Name="Dice174" Width="32" Source="Assets/Blank.png" Tapped="Dice174_Tapped"/>
+                        <Image x:Name="Dice175" Width="32" Source="Assets/Blank.png" Tapped="Dice175_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice181" Width="32" Source="Assets/Blank.png" Tapped="Dice181_Tapped"/>
+                        <Image x:Name="Dice182" Width="32" Source="Assets/Blank.png" Tapped="Dice182_Tapped"/>
+                        <Image x:Name="Dice183" Width="32" Source="Assets/Blank.png" Tapped="Dice183_Tapped"/>
+                        <Image x:Name="Dice184" Width="32" Source="Assets/Blank.png" Tapped="Dice184_Tapped"/>
+                        <Image x:Name="Dice185" Width="32" Source="Assets/Blank.png" Tapped="Dice185_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice191" Width="32" Source="Assets/Blank.png" Tapped="Dice191_Tapped"/>
+                        <Image x:Name="Dice192" Width="32" Source="Assets/Blank.png" Tapped="Dice192_Tapped"/>
+                        <Image x:Name="Dice193" Width="32" Source="Assets/Blank.png" Tapped="Dice193_Tapped"/>
+                        <Image x:Name="Dice194" Width="32" Source="Assets/Blank.png" Tapped="Dice194_Tapped"/>
+                        <Image x:Name="Dice195" Width="32" Source="Assets/Blank.png" Tapped="Dice195_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textDescendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textDescendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="NormalFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice41" Width="32" Source="Assets/Blank.png" Tapped="Dice41_Tapped"/>
-                    <Image x:Name="Dice42" Width="32" Source="Assets/Blank.png" Tapped="Dice42_Tapped"/>
-                    <Image x:Name="Dice43" Width="32" Source="Assets/Blank.png" Tapped="Dice43_Tapped"/>
-                    <Image x:Name="Dice44" Width="32" Source="Assets/Blank.png" Tapped="Dice44_Tapped"/>
-                    <Image x:Name="Dice45" Width="32" Source="Assets/Blank.png" Tapped="Dice45_Tapped"/>
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="TopToBottom" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="DescLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice201" Width="32" Source="Assets/Blank.png" Tapped="Dice201_Tapped"/>
+                        <Image x:Name="Dice202" Width="32" Source="Assets/Blank.png" Tapped="Dice202_Tapped"/>
+                        <Image x:Name="Dice203" Width="32" Source="Assets/Blank.png" Tapped="Dice203_Tapped"/>
+                        <Image x:Name="Dice204" Width="32" Source="Assets/Blank.png" Tapped="Dice204_Tapped"/>
+                        <Image x:Name="Dice205" Width="32" Source="Assets/Blank.png" Tapped="Dice205_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice211" Width="32" Source="Assets/Blank.png" Tapped="Dice211_Tapped"/>
+                        <Image x:Name="Dice212" Width="32" Source="Assets/Blank.png" Tapped="Dice212_Tapped"/>
+                        <Image x:Name="Dice213" Width="32" Source="Assets/Blank.png" Tapped="Dice213_Tapped"/>
+                        <Image x:Name="Dice214" Width="32" Source="Assets/Blank.png" Tapped="Dice214_Tapped"/>
+                        <Image x:Name="Dice215" Width="32" Source="Assets/Blank.png" Tapped="Dice215_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice221" Width="32" Source="Assets/Blank.png" Tapped="Dice221_Tapped"/>
+                        <Image x:Name="Dice222" Width="32" Source="Assets/Blank.png" Tapped="Dice222_Tapped"/>
+                        <Image x:Name="Dice223" Width="32" Source="Assets/Blank.png" Tapped="Dice223_Tapped"/>
+                        <Image x:Name="Dice224" Width="32" Source="Assets/Blank.png" Tapped="Dice224_Tapped"/>
+                        <Image x:Name="Dice225" Width="32" Source="Assets/Blank.png" Tapped="Dice225_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice231" Width="32" Source="Assets/Blank.png" Tapped="Dice231_Tapped"/>
+                        <Image x:Name="Dice232" Width="32" Source="Assets/Blank.png" Tapped="Dice232_Tapped"/>
+                        <Image x:Name="Dice233" Width="32" Source="Assets/Blank.png" Tapped="Dice233_Tapped"/>
+                        <Image x:Name="Dice234" Width="32" Source="Assets/Blank.png" Tapped="Dice234_Tapped"/>
+                        <Image x:Name="Dice235" Width="32" Source="Assets/Blank.png" Tapped="Dice235_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice241" Width="32" Source="Assets/Blank.png" Tapped="Dice241_Tapped"/>
+                        <Image x:Name="Dice242" Width="32" Source="Assets/Blank.png" Tapped="Dice242_Tapped"/>
+                        <Image x:Name="Dice243" Width="32" Source="Assets/Blank.png" Tapped="Dice243_Tapped"/>
+                        <Image x:Name="Dice244" Width="32" Source="Assets/Blank.png" Tapped="Dice244_Tapped"/>
+                        <Image x:Name="Dice245" Width="32" Source="Assets/Blank.png" Tapped="Dice245_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice251" Width="32" Source="Assets/Blank.png" Tapped="Dice251_Tapped"/>
+                        <Image x:Name="Dice252" Width="32" Source="Assets/Blank.png" Tapped="Dice252_Tapped"/>
+                        <Image x:Name="Dice253" Width="32" Source="Assets/Blank.png" Tapped="Dice253_Tapped"/>
+                        <Image x:Name="Dice254" Width="32" Source="Assets/Blank.png" Tapped="Dice254_Tapped"/>
+                        <Image x:Name="Dice255" Width="32" Source="Assets/Blank.png" Tapped="Dice255_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="DescYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice261" Width="32" Source="Assets/Blank.png" Tapped="Dice261_Tapped"/>
+                        <Image x:Name="Dice262" Width="32" Source="Assets/Blank.png" Tapped="Dice262_Tapped"/>
+                        <Image x:Name="Dice263" Width="32" Source="Assets/Blank.png" Tapped="Dice263_Tapped"/>
+                        <Image x:Name="Dice264" Width="32" Source="Assets/Blank.png" Tapped="Dice264_Tapped"/>
+                        <Image x:Name="Dice265" Width="32" Source="Assets/Blank.png" Tapped="Dice265_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textDescendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textDescendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="NormalFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice51" Width="32" Source="Assets/Blank.png" Tapped="Dice51_Tapped"/>
-                    <Image x:Name="Dice52" Width="32" Source="Assets/Blank.png" Tapped="Dice52_Tapped"/>
-                    <Image x:Name="Dice53" Width="32" Source="Assets/Blank.png" Tapped="Dice53_Tapped"/>
-                    <Image x:Name="Dice54" Width="32" Source="Assets/Blank.png" Tapped="Dice54_Tapped"/>
-                    <Image x:Name="Dice55" Width="32" Source="Assets/Blank.png" Tapped="Dice55_Tapped"/>
+
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="BottomToTop" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="AscOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice271" Width="32" Source="Assets/Blank.png" Tapped="Dice271_Tapped"/>
+                        <Image x:Name="Dice272" Width="32" Source="Assets/Blank.png" Tapped="Dice272_Tapped"/>
+                        <Image x:Name="Dice273" Width="32" Source="Assets/Blank.png" Tapped="Dice273_Tapped"/>
+                        <Image x:Name="Dice274" Width="32" Source="Assets/Blank.png" Tapped="Dice274_Tapped"/>
+                        <Image x:Name="Dice275" Width="32" Source="Assets/Blank.png" Tapped="Dice275_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice281" Width="32" Source="Assets/Blank.png" Tapped="Dice281_Tapped"/>
+                        <Image x:Name="Dice282" Width="32" Source="Assets/Blank.png" Tapped="Dice282_Tapped"/>
+                        <Image x:Name="Dice283" Width="32" Source="Assets/Blank.png" Tapped="Dice283_Tapped"/>
+                        <Image x:Name="Dice284" Width="32" Source="Assets/Blank.png" Tapped="Dice284_Tapped"/>
+                        <Image x:Name="Dice285" Width="32" Source="Assets/Blank.png" Tapped="Dice285_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice291" Width="32" Source="Assets/Blank.png" Tapped="Dice291_Tapped"/>
+                        <Image x:Name="Dice292" Width="32" Source="Assets/Blank.png" Tapped="Dice292_Tapped"/>
+                        <Image x:Name="Dice293" Width="32" Source="Assets/Blank.png" Tapped="Dice293_Tapped"/>
+                        <Image x:Name="Dice294" Width="32" Source="Assets/Blank.png" Tapped="Dice294_Tapped"/>
+                        <Image x:Name="Dice295" Width="32" Source="Assets/Blank.png" Tapped="Dice295_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice301" Width="32" Source="Assets/Blank.png" Tapped="Dice301_Tapped"/>
+                        <Image x:Name="Dice302" Width="32" Source="Assets/Blank.png" Tapped="Dice302_Tapped"/>
+                        <Image x:Name="Dice303" Width="32" Source="Assets/Blank.png" Tapped="Dice303_Tapped"/>
+                        <Image x:Name="Dice304" Width="32" Source="Assets/Blank.png" Tapped="Dice304_Tapped"/>
+                        <Image x:Name="Dice305" Width="32" Source="Assets/Blank.png" Tapped="Dice305_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice311" Width="32" Source="Assets/Blank.png" Tapped="Dice311_Tapped"/>
+                        <Image x:Name="Dice312" Width="32" Source="Assets/Blank.png" Tapped="Dice312_Tapped"/>
+                        <Image x:Name="Dice313" Width="32" Source="Assets/Blank.png" Tapped="Dice313_Tapped"/>
+                        <Image x:Name="Dice314" Width="32" Source="Assets/Blank.png" Tapped="Dice314_Tapped"/>
+                        <Image x:Name="Dice315" Width="32" Source="Assets/Blank.png" Tapped="Dice315_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice321" Width="32" Source="Assets/Blank.png" Tapped="Dice321_Tapped"/>
+                        <Image x:Name="Dice322" Width="32" Source="Assets/Blank.png" Tapped="Dice322_Tapped"/>
+                        <Image x:Name="Dice323" Width="32" Source="Assets/Blank.png" Tapped="Dice323_Tapped"/>
+                        <Image x:Name="Dice324" Width="32" Source="Assets/Blank.png" Tapped="Dice324_Tapped"/>
+                        <Image x:Name="Dice325" Width="32" Source="Assets/Blank.png" Tapped="Dice325_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textAscendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textAscendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="NormalSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice61" Width="32" Source="Assets/Blank.png" Tapped="Dice61_Tapped"/>
-                    <Image x:Name="Dice62" Width="32" Source="Assets/Blank.png" Tapped="Dice62_Tapped"/>
-                    <Image x:Name="Dice63" Width="32" Source="Assets/Blank.png" Tapped="Dice63_Tapped"/>
-                    <Image x:Name="Dice64" Width="32" Source="Assets/Blank.png" Tapped="Dice64_Tapped"/>
-                    <Image x:Name="Dice65" Width="32" Source="Assets/Blank.png" Tapped="Dice65_Tapped"/>
+                <StackPanel HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" VerticalAlignment="Top" Width="200">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="BottomToTop" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
+                    <TextBlock x:Name="AscLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice331" Width="32" Source="Assets/Blank.png" Tapped="Dice331_Tapped"/>
+                        <Image x:Name="Dice332" Width="32" Source="Assets/Blank.png" Tapped="Dice332_Tapped"/>
+                        <Image x:Name="Dice333" Width="32" Source="Assets/Blank.png" Tapped="Dice333_Tapped"/>
+                        <Image x:Name="Dice334" Width="32" Source="Assets/Blank.png" Tapped="Dice334_Tapped"/>
+                        <Image x:Name="Dice335" Width="32" Source="Assets/Blank.png" Tapped="Dice335_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice341" Width="32" Source="Assets/Blank.png" Tapped="Dice341_Tapped"/>
+                        <Image x:Name="Dice342" Width="32" Source="Assets/Blank.png" Tapped="Dice342_Tapped"/>
+                        <Image x:Name="Dice343" Width="32" Source="Assets/Blank.png" Tapped="Dice343_Tapped"/>
+                        <Image x:Name="Dice344" Width="32" Source="Assets/Blank.png" Tapped="Dice344_Tapped"/>
+                        <Image x:Name="Dice345" Width="32" Source="Assets/Blank.png" Tapped="Dice345_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice351" Width="32" Source="Assets/Blank.png" Tapped="Dice351_Tapped"/>
+                        <Image x:Name="Dice352" Width="32" Source="Assets/Blank.png" Tapped="Dice352_Tapped"/>
+                        <Image x:Name="Dice353" Width="32" Source="Assets/Blank.png" Tapped="Dice353_Tapped"/>
+                        <Image x:Name="Dice354" Width="32" Source="Assets/Blank.png" Tapped="Dice354_Tapped"/>
+                        <Image x:Name="Dice355" Width="32" Source="Assets/Blank.png" Tapped="Dice355_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice361" Width="32" Source="Assets/Blank.png" Tapped="Dice361_Tapped"/>
+                        <Image x:Name="Dice362" Width="32" Source="Assets/Blank.png" Tapped="Dice362_Tapped"/>
+                        <Image x:Name="Dice363" Width="32" Source="Assets/Blank.png" Tapped="Dice363_Tapped"/>
+                        <Image x:Name="Dice364" Width="32" Source="Assets/Blank.png" Tapped="Dice364_Tapped"/>
+                        <Image x:Name="Dice365" Width="32" Source="Assets/Blank.png" Tapped="Dice365_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice371" Width="32" Source="Assets/Blank.png" Tapped="Dice371_Tapped"/>
+                        <Image x:Name="Dice372" Width="32" Source="Assets/Blank.png" Tapped="Dice372_Tapped"/>
+                        <Image x:Name="Dice373" Width="32" Source="Assets/Blank.png" Tapped="Dice373_Tapped"/>
+                        <Image x:Name="Dice374" Width="32" Source="Assets/Blank.png" Tapped="Dice374_Tapped"/>
+                        <Image x:Name="Dice375" Width="32" Source="Assets/Blank.png" Tapped="Dice375_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice381" Width="32" Source="Assets/Blank.png" Tapped="Dice381_Tapped"/>
+                        <Image x:Name="Dice382" Width="32" Source="Assets/Blank.png" Tapped="Dice382_Tapped"/>
+                        <Image x:Name="Dice383" Width="32" Source="Assets/Blank.png" Tapped="Dice383_Tapped"/>
+                        <Image x:Name="Dice384" Width="32" Source="Assets/Blank.png" Tapped="Dice384_Tapped"/>
+                        <Image x:Name="Dice385" Width="32" Source="Assets/Blank.png" Tapped="Dice385_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="AscYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top" FontSize="16"/>
+                    <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
+                        <Image x:Name="Dice391" Width="32" Source="Assets/Blank.png" Tapped="Dice391_Tapped"/>
+                        <Image x:Name="Dice392" Width="32" Source="Assets/Blank.png" Tapped="Dice392_Tapped"/>
+                        <Image x:Name="Dice393" Width="32" Source="Assets/Blank.png" Tapped="Dice393_Tapped"/>
+                        <Image x:Name="Dice394" Width="32" Source="Assets/Blank.png" Tapped="Dice394_Tapped"/>
+                        <Image x:Name="Dice395" Width="32" Source="Assets/Blank.png" Tapped="Dice395_Tapped"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textAscendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="textAscendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top" FontSize="16"/>
                 </StackPanel>
-                <TextBlock x:Name="textNormalSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textNormalBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
-                <TextBlock x:Name="NormalLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice71" Width="32" Source="Assets/Blank.png" Tapped="Dice71_Tapped"/>
-                    <Image x:Name="Dice72" Width="32" Source="Assets/Blank.png" Tapped="Dice72_Tapped"/>
-                    <Image x:Name="Dice73" Width="32" Source="Assets/Blank.png" Tapped="Dice73_Tapped"/>
-                    <Image x:Name="Dice74" Width="32" Source="Assets/Blank.png" Tapped="Dice74_Tapped"/>
-                    <Image x:Name="Dice75" Width="32" Source="Assets/Blank.png" Tapped="Dice75_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice81" Width="32" Source="Assets/Blank.png" Tapped="Dice81_Tapped"/>
-                    <Image x:Name="Dice82" Width="32" Source="Assets/Blank.png" Tapped="Dice82_Tapped"/>
-                    <Image x:Name="Dice83" Width="32" Source="Assets/Blank.png" Tapped="Dice83_Tapped"/>
-                    <Image x:Name="Dice84" Width="32" Source="Assets/Blank.png" Tapped="Dice84_Tapped"/>
-                    <Image x:Name="Dice85" Width="32" Source="Assets/Blank.png" Tapped="Dice85_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice91" Width="32" Source="Assets/Blank.png" Tapped="Dice91_Tapped"/>
-                    <Image x:Name="Dice92" Width="32" Source="Assets/Blank.png" Tapped="Dice92_Tapped"/>
-                    <Image x:Name="Dice93" Width="32" Source="Assets/Blank.png" Tapped="Dice93_Tapped"/>
-                    <Image x:Name="Dice94" Width="32" Source="Assets/Blank.png" Tapped="Dice94_Tapped"/>
-                    <Image x:Name="Dice95" Width="32" Source="Assets/Blank.png" Tapped="Dice95_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice101" Width="32" Source="Assets/Blank.png" Tapped="Dice101_Tapped"/>
-                    <Image x:Name="Dice102" Width="32" Source="Assets/Blank.png" Tapped="Dice102_Tapped"/>
-                    <Image x:Name="Dice103" Width="32" Source="Assets/Blank.png" Tapped="Dice103_Tapped"/>
-                    <Image x:Name="Dice104" Width="32" Source="Assets/Blank.png" Tapped="Dice104_Tapped"/>
-                    <Image x:Name="Dice105" Width="32" Source="Assets/Blank.png" Tapped="Dice105_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice111" Width="32" Source="Assets/Blank.png" Tapped="Dice111_Tapped"/>
-                    <Image x:Name="Dice112" Width="32" Source="Assets/Blank.png" Tapped="Dice112_Tapped"/>
-                    <Image x:Name="Dice113" Width="32" Source="Assets/Blank.png" Tapped="Dice113_Tapped"/>
-                    <Image x:Name="Dice114" Width="32" Source="Assets/Blank.png" Tapped="Dice114_Tapped"/>
-                    <Image x:Name="Dice115" Width="32" Source="Assets/Blank.png" Tapped="Dice115_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice121" Width="32" Source="Assets/Blank.png" Tapped="Dice121_Tapped"/>
-                    <Image x:Name="Dice122" Width="32" Source="Assets/Blank.png" Tapped="Dice122_Tapped"/>
-                    <Image x:Name="Dice123" Width="32" Source="Assets/Blank.png" Tapped="Dice123_Tapped"/>
-                    <Image x:Name="Dice124" Width="32" Source="Assets/Blank.png" Tapped="Dice124_Tapped"/>
-                    <Image x:Name="Dice125" Width="32" Source="Assets/Blank.png" Tapped="Dice125_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="NormalYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice131" Width="32" Source="Assets/Blank.png" Tapped="Dice131_Tapped"/>
-                    <Image x:Name="Dice132" Width="32" Source="Assets/Blank.png" Tapped="Dice132_Tapped"/>
-                    <Image x:Name="Dice133" Width="32" Source="Assets/Blank.png" Tapped="Dice133_Tapped"/>
-                    <Image x:Name="Dice134" Width="32" Source="Assets/Blank.png" Tapped="Dice134_Tapped"/>
-                    <Image x:Name="Dice135" Width="32" Source="Assets/Blank.png" Tapped="Dice135_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="textNormalSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textNormalTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left" Height="700" Margin="160,0,-60,0" VerticalAlignment="Top" Width="160">
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="TopToBottom" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
-                <TextBlock x:Name="DescOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice141" Width="32" Source="Assets/Blank.png" Tapped="Dice141_Tapped"/>
-                    <Image x:Name="Dice142" Width="32" Source="Assets/Blank.png" Tapped="Dice142_Tapped"/>
-                    <Image x:Name="Dice143" Width="32" Source="Assets/Blank.png" Tapped="Dice143_Tapped"/>
-                    <Image x:Name="Dice144" Width="32" Source="Assets/Blank.png" Tapped="Dice144_Tapped"/>
-                    <Image x:Name="Dice145" Width="32" Source="Assets/Blank.png" Tapped="Dice145_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice151" Width="32" Source="Assets/Blank.png" Tapped="Dice151_Tapped"/>
-                    <Image x:Name="Dice152" Width="32" Source="Assets/Blank.png" Tapped="Dice152_Tapped"/>
-                    <Image x:Name="Dice153" Width="32" Source="Assets/Blank.png" Tapped="Dice153_Tapped"/>
-                    <Image x:Name="Dice154" Width="32" Source="Assets/Blank.png" Tapped="Dice154_Tapped"/>
-                    <Image x:Name="Dice155" Width="32" Source="Assets/Blank.png" Tapped="Dice155_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice161" Width="32" Source="Assets/Blank.png" Tapped="Dice161_Tapped"/>
-                    <Image x:Name="Dice162" Width="32" Source="Assets/Blank.png" Tapped="Dice162_Tapped"/>
-                    <Image x:Name="Dice163" Width="32" Source="Assets/Blank.png" Tapped="Dice163_Tapped"/>
-                    <Image x:Name="Dice164" Width="32" Source="Assets/Blank.png" Tapped="Dice164_Tapped"/>
-                    <Image x:Name="Dice165" Width="32" Source="Assets/Blank.png" Tapped="Dice165_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice171" Width="32" Source="Assets/Blank.png" Tapped="Dice171_Tapped"/>
-                    <Image x:Name="Dice172" Width="32" Source="Assets/Blank.png" Tapped="Dice172_Tapped"/>
-                    <Image x:Name="Dice173" Width="32" Source="Assets/Blank.png" Tapped="Dice173_Tapped"/>
-                    <Image x:Name="Dice174" Width="32" Source="Assets/Blank.png" Tapped="Dice174_Tapped"/>
-                    <Image x:Name="Dice175" Width="32" Source="Assets/Blank.png" Tapped="Dice175_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice181" Width="32" Source="Assets/Blank.png" Tapped="Dice181_Tapped"/>
-                    <Image x:Name="Dice182" Width="32" Source="Assets/Blank.png" Tapped="Dice182_Tapped"/>
-                    <Image x:Name="Dice183" Width="32" Source="Assets/Blank.png" Tapped="Dice183_Tapped"/>
-                    <Image x:Name="Dice184" Width="32" Source="Assets/Blank.png" Tapped="Dice184_Tapped"/>
-                    <Image x:Name="Dice185" Width="32" Source="Assets/Blank.png" Tapped="Dice185_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice191" Width="32" Source="Assets/Blank.png" Tapped="Dice191_Tapped"/>
-                    <Image x:Name="Dice192" Width="32" Source="Assets/Blank.png" Tapped="Dice192_Tapped"/>
-                    <Image x:Name="Dice193" Width="32" Source="Assets/Blank.png" Tapped="Dice193_Tapped"/>
-                    <Image x:Name="Dice194" Width="32" Source="Assets/Blank.png" Tapped="Dice194_Tapped"/>
-                    <Image x:Name="Dice195" Width="32" Source="Assets/Blank.png" Tapped="Dice195_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="textDescendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textDescendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
-                <TextBlock x:Name="DescLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice201" Width="32" Source="Assets/Blank.png" Tapped="Dice201_Tapped"/>
-                    <Image x:Name="Dice202" Width="32" Source="Assets/Blank.png" Tapped="Dice202_Tapped"/>
-                    <Image x:Name="Dice203" Width="32" Source="Assets/Blank.png" Tapped="Dice203_Tapped"/>
-                    <Image x:Name="Dice204" Width="32" Source="Assets/Blank.png" Tapped="Dice204_Tapped"/>
-                    <Image x:Name="Dice205" Width="32" Source="Assets/Blank.png" Tapped="Dice205_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice211" Width="32" Source="Assets/Blank.png" Tapped="Dice211_Tapped"/>
-                    <Image x:Name="Dice212" Width="32" Source="Assets/Blank.png" Tapped="Dice212_Tapped"/>
-                    <Image x:Name="Dice213" Width="32" Source="Assets/Blank.png" Tapped="Dice213_Tapped"/>
-                    <Image x:Name="Dice214" Width="32" Source="Assets/Blank.png" Tapped="Dice214_Tapped"/>
-                    <Image x:Name="Dice215" Width="32" Source="Assets/Blank.png" Tapped="Dice215_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice221" Width="32" Source="Assets/Blank.png" Tapped="Dice221_Tapped"/>
-                    <Image x:Name="Dice222" Width="32" Source="Assets/Blank.png" Tapped="Dice222_Tapped"/>
-                    <Image x:Name="Dice223" Width="32" Source="Assets/Blank.png" Tapped="Dice223_Tapped"/>
-                    <Image x:Name="Dice224" Width="32" Source="Assets/Blank.png" Tapped="Dice224_Tapped"/>
-                    <Image x:Name="Dice225" Width="32" Source="Assets/Blank.png" Tapped="Dice225_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice231" Width="32" Source="Assets/Blank.png" Tapped="Dice231_Tapped"/>
-                    <Image x:Name="Dice232" Width="32" Source="Assets/Blank.png" Tapped="Dice232_Tapped"/>
-                    <Image x:Name="Dice233" Width="32" Source="Assets/Blank.png" Tapped="Dice233_Tapped"/>
-                    <Image x:Name="Dice234" Width="32" Source="Assets/Blank.png" Tapped="Dice234_Tapped"/>
-                    <Image x:Name="Dice235" Width="32" Source="Assets/Blank.png" Tapped="Dice235_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice241" Width="32" Source="Assets/Blank.png" Tapped="Dice241_Tapped"/>
-                    <Image x:Name="Dice242" Width="32" Source="Assets/Blank.png" Tapped="Dice242_Tapped"/>
-                    <Image x:Name="Dice243" Width="32" Source="Assets/Blank.png" Tapped="Dice243_Tapped"/>
-                    <Image x:Name="Dice244" Width="32" Source="Assets/Blank.png" Tapped="Dice244_Tapped"/>
-                    <Image x:Name="Dice245" Width="32" Source="Assets/Blank.png" Tapped="Dice245_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice251" Width="32" Source="Assets/Blank.png" Tapped="Dice251_Tapped"/>
-                    <Image x:Name="Dice252" Width="32" Source="Assets/Blank.png" Tapped="Dice252_Tapped"/>
-                    <Image x:Name="Dice253" Width="32" Source="Assets/Blank.png" Tapped="Dice253_Tapped"/>
-                    <Image x:Name="Dice254" Width="32" Source="Assets/Blank.png" Tapped="Dice254_Tapped"/>
-                    <Image x:Name="Dice255" Width="32" Source="Assets/Blank.png" Tapped="Dice255_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="DescYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice261" Width="32" Source="Assets/Blank.png" Tapped="Dice261_Tapped"/>
-                    <Image x:Name="Dice262" Width="32" Source="Assets/Blank.png" Tapped="Dice262_Tapped"/>
-                    <Image x:Name="Dice263" Width="32" Source="Assets/Blank.png" Tapped="Dice263_Tapped"/>
-                    <Image x:Name="Dice264" Width="32" Source="Assets/Blank.png" Tapped="Dice264_Tapped"/>
-                    <Image x:Name="Dice265" Width="32" Source="Assets/Blank.png" Tapped="Dice265_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="textDescendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textDescendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
+            <StackPanel HorizontalAlignment="Center" Height="61" VerticalAlignment="Top" Orientation="Horizontal">
+                <Image x:Name="picDice1" Width="100" Tapped="picDice1_Tapped"/>
+                <Image x:Name="picDice2" Width="100" Tapped="picDice2_Tapped"/>
+                <Image x:Name="picDice3" Width="100" Tapped="picDice3_Tapped"/>
+                <Image x:Name="picDice4" Width="100" Tapped="picDice4_Tapped"/>
+                <Image x:Name="picDice5" Width="100" Tapped="picDice5_Tapped"/>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left" Height="700" Margin="160,0,-60,0" VerticalAlignment="Top" Width="160">
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" x:Uid="BottomToTop" Text="" VerticalAlignment="Top" FontSize="20" FontFamily="Andalus"/>
-                <TextBlock x:Name="AscOne" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheOne" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice271" Width="32" Source="Assets/Blank.png" Tapped="Dice271_Tapped"/>
-                    <Image x:Name="Dice272" Width="32" Source="Assets/Blank.png" Tapped="Dice272_Tapped"/>
-                    <Image x:Name="Dice273" Width="32" Source="Assets/Blank.png" Tapped="Dice273_Tapped"/>
-                    <Image x:Name="Dice274" Width="32" Source="Assets/Blank.png" Tapped="Dice274_Tapped"/>
-                    <Image x:Name="Dice275" Width="32" Source="Assets/Blank.png" Tapped="Dice275_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscTwo" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheTwo" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice281" Width="32" Source="Assets/Blank.png" Tapped="Dice281_Tapped"/>
-                    <Image x:Name="Dice282" Width="32" Source="Assets/Blank.png" Tapped="Dice282_Tapped"/>
-                    <Image x:Name="Dice283" Width="32" Source="Assets/Blank.png" Tapped="Dice283_Tapped"/>
-                    <Image x:Name="Dice284" Width="32" Source="Assets/Blank.png" Tapped="Dice284_Tapped"/>
-                    <Image x:Name="Dice285" Width="32" Source="Assets/Blank.png" Tapped="Dice285_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscThree" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheThree" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice291" Width="32" Source="Assets/Blank.png" Tapped="Dice291_Tapped"/>
-                    <Image x:Name="Dice292" Width="32" Source="Assets/Blank.png" Tapped="Dice292_Tapped"/>
-                    <Image x:Name="Dice293" Width="32" Source="Assets/Blank.png" Tapped="Dice293_Tapped"/>
-                    <Image x:Name="Dice294" Width="32" Source="Assets/Blank.png" Tapped="Dice294_Tapped"/>
-                    <Image x:Name="Dice295" Width="32" Source="Assets/Blank.png" Tapped="Dice295_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscFour" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFour" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice301" Width="32" Source="Assets/Blank.png" Tapped="Dice301_Tapped"/>
-                    <Image x:Name="Dice302" Width="32" Source="Assets/Blank.png" Tapped="Dice302_Tapped"/>
-                    <Image x:Name="Dice303" Width="32" Source="Assets/Blank.png" Tapped="Dice303_Tapped"/>
-                    <Image x:Name="Dice304" Width="32" Source="Assets/Blank.png" Tapped="Dice304_Tapped"/>
-                    <Image x:Name="Dice305" Width="32" Source="Assets/Blank.png" Tapped="Dice305_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscFive" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheFive" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice311" Width="32" Source="Assets/Blank.png" Tapped="Dice311_Tapped"/>
-                    <Image x:Name="Dice312" Width="32" Source="Assets/Blank.png" Tapped="Dice312_Tapped"/>
-                    <Image x:Name="Dice313" Width="32" Source="Assets/Blank.png" Tapped="Dice313_Tapped"/>
-                    <Image x:Name="Dice314" Width="32" Source="Assets/Blank.png" Tapped="Dice314_Tapped"/>
-                    <Image x:Name="Dice315" Width="32" Source="Assets/Blank.png" Tapped="Dice315_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscSix" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="TheSix" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice321" Width="32" Source="Assets/Blank.png" Tapped="Dice321_Tapped"/>
-                    <Image x:Name="Dice322" Width="32" Source="Assets/Blank.png" Tapped="Dice322_Tapped"/>
-                    <Image x:Name="Dice323" Width="32" Source="Assets/Blank.png" Tapped="Dice323_Tapped"/>
-                    <Image x:Name="Dice324" Width="32" Source="Assets/Blank.png" Tapped="Dice324_Tapped"/>
-                    <Image x:Name="Dice325" Width="32" Source="Assets/Blank.png" Tapped="Dice325_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="textAscendingSubTotal1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textAscendingBonus" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Bonus1to6" Text="" VerticalAlignment="Top"/>
-                <TextBlock x:Name="AscLess11" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="LessThan11" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice331" Width="32" Source="Assets/Blank.png" Tapped="Dice331_Tapped"/>
-                    <Image x:Name="Dice332" Width="32" Source="Assets/Blank.png" Tapped="Dice332_Tapped"/>
-                    <Image x:Name="Dice333" Width="32" Source="Assets/Blank.png" Tapped="Dice333_Tapped"/>
-                    <Image x:Name="Dice334" Width="32" Source="Assets/Blank.png" Tapped="Dice334_Tapped"/>
-                    <Image x:Name="Dice335" Width="32" Source="Assets/Blank.png" Tapped="Dice335_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscSmall" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Small" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice341" Width="32" Source="Assets/Blank.png" Tapped="Dice341_Tapped"/>
-                    <Image x:Name="Dice342" Width="32" Source="Assets/Blank.png" Tapped="Dice342_Tapped"/>
-                    <Image x:Name="Dice343" Width="32" Source="Assets/Blank.png" Tapped="Dice343_Tapped"/>
-                    <Image x:Name="Dice344" Width="32" Source="Assets/Blank.png" Tapped="Dice344_Tapped"/>
-                    <Image x:Name="Dice345" Width="32" Source="Assets/Blank.png" Tapped="Dice345_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscBig" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Big" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice351" Width="32" Source="Assets/Blank.png" Tapped="Dice351_Tapped"/>
-                    <Image x:Name="Dice352" Width="32" Source="Assets/Blank.png" Tapped="Dice352_Tapped"/>
-                    <Image x:Name="Dice353" Width="32" Source="Assets/Blank.png" Tapped="Dice353_Tapped"/>
-                    <Image x:Name="Dice354" Width="32" Source="Assets/Blank.png" Tapped="Dice354_Tapped"/>
-                    <Image x:Name="Dice355" Width="32" Source="Assets/Blank.png" Tapped="Dice355_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscFourOfAKind" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="FourOfAKind" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice361" Width="32" Source="Assets/Blank.png" Tapped="Dice361_Tapped"/>
-                    <Image x:Name="Dice362" Width="32" Source="Assets/Blank.png" Tapped="Dice362_Tapped"/>
-                    <Image x:Name="Dice363" Width="32" Source="Assets/Blank.png" Tapped="Dice363_Tapped"/>
-                    <Image x:Name="Dice364" Width="32" Source="Assets/Blank.png" Tapped="Dice364_Tapped"/>
-                    <Image x:Name="Dice365" Width="32" Source="Assets/Blank.png" Tapped="Dice365_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscFull" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Full" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice371" Width="32" Source="Assets/Blank.png" Tapped="Dice371_Tapped"/>
-                    <Image x:Name="Dice372" Width="32" Source="Assets/Blank.png" Tapped="Dice372_Tapped"/>
-                    <Image x:Name="Dice373" Width="32" Source="Assets/Blank.png" Tapped="Dice373_Tapped"/>
-                    <Image x:Name="Dice374" Width="32" Source="Assets/Blank.png" Tapped="Dice374_Tapped"/>
-                    <Image x:Name="Dice375" Width="32" Source="Assets/Blank.png" Tapped="Dice375_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscStraight" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Straight" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice381" Width="32" Source="Assets/Blank.png" Tapped="Dice381_Tapped"/>
-                    <Image x:Name="Dice382" Width="32" Source="Assets/Blank.png" Tapped="Dice382_Tapped"/>
-                    <Image x:Name="Dice383" Width="32" Source="Assets/Blank.png" Tapped="Dice383_Tapped"/>
-                    <Image x:Name="Dice384" Width="32" Source="Assets/Blank.png" Tapped="Dice384_Tapped"/>
-                    <Image x:Name="Dice385" Width="32" Source="Assets/Blank.png" Tapped="Dice385_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="AscYatzee" HorizontalAlignment="Left" TextWrapping="Wrap" x:Uid="Yatzee" Text="" VerticalAlignment="Top"/>
-                <StackPanel HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="160" Orientation="Horizontal">
-                    <Image x:Name="Dice391" Width="32" Source="Assets/Blank.png" Tapped="Dice391_Tapped"/>
-                    <Image x:Name="Dice392" Width="32" Source="Assets/Blank.png" Tapped="Dice392_Tapped"/>
-                    <Image x:Name="Dice393" Width="32" Source="Assets/Blank.png" Tapped="Dice393_Tapped"/>
-                    <Image x:Name="Dice394" Width="32" Source="Assets/Blank.png" Tapped="Dice394_Tapped"/>
-                    <Image x:Name="Dice395" Width="32" Source="Assets/Blank.png" Tapped="Dice395_Tapped"/>
-                </StackPanel>
-                <TextBlock x:Name="textAscendingSubTotal2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-                <TextBlock x:Name="textAscendingTotal" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total :" VerticalAlignment="Top"/>
-            </StackPanel>
+            <Button x:Name="Roll_Dices" x:Uid="RollDices" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Roll_Dices_Button_Click"/>
+            <TextBlock x:Name="labelRemainingLaunch" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24"/>
+            <TextBlock x:Name="labelDicesTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Total : " VerticalAlignment="Top" FontSize="24"/>
+            <TextBlock x:Name="textGrandTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Grand Total : " VerticalAlignment="Top" FontSize="24"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="61" Margin="828,572,0,0" VerticalAlignment="Top" Width="500" Orientation="Horizontal">
-            <Image x:Name="picDice1" Width="100" Tapped="picDice1_Tapped"/>
-            <Image x:Name="picDice2" Width="100" Tapped="picDice2_Tapped"/>
-            <Image x:Name="picDice3" Width="100" Tapped="picDice3_Tapped"/>
-            <Image x:Name="picDice4" Width="100" Tapped="picDice4_Tapped"/>
-            <Image x:Name="picDice5" Width="100" Tapped="picDice5_Tapped"/>
-        </StackPanel>
-        <Button x:Name="Roll_Dices" x:Uid="RollDices" Content="" HorizontalAlignment="Left" Margin="1191,671,0,0" VerticalAlignment="Top" Click="Roll_Dices_Button_Click"/>
-        <TextBlock x:Name="labelRemainingLaunch" HorizontalAlignment="Left" Margin="887,674,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock x:Name="labelDicesTotal" HorizontalAlignment="Left" Margin="887,708,0,0" TextWrapping="Wrap" Text="Total : " VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock x:Name="textGrandTotal" HorizontalAlignment="Left" Margin="887,742,0,0" TextWrapping="Wrap" Text="Grand Total : " VerticalAlignment="Top" FontSize="24"/>
+        
     </Grid>
 </Page>
