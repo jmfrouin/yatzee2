@@ -78,26 +78,7 @@ namespace Yatzee2
             //BackColor = Color.Lavender;
         }
 
-        #region SelectXDiceImage
-        private ImageSource SelectRDicesImage(int diceValue)
-        {
-            switch (diceValue)
-            {
-                case 1:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice1R.png"));
-                case 2:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice2R.png"));
-                case 3:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice3R.png"));
-                case 4:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice4R.png"));
-                case 5:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice5R.png"));
-                default:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice6R.png"));
-            }
-        }
-
+        #region SelectDicesImage
         private ImageSource SelectDicesImage(int diceValue)
         {
             switch (diceValue)
@@ -114,25 +95,6 @@ namespace Yatzee2
                     return new BitmapImage(new Uri("ms-appx:///Assets/Dice5B.png"));
                 default:
                     return new BitmapImage(new Uri("ms-appx:///Assets/Dice6B.png"));
-            }
-        }
-
-        private ImageSource SelectSmallDicesImage(int diceValue)
-        {
-            switch (diceValue)
-            {
-                case 1:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice1S.png"));
-                case 2:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice2S.png"));
-                case 3:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice3S.png"));
-                case 4:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice4S.png"));
-                case 5:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice5S.png"));
-                default:
-                    return new BitmapImage(new Uri("ms-appx:///Assets/Dice6S.png"));
             }
         }
         #endregion
@@ -186,8 +148,10 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                Lock[0] = !Lock[0];
-                this.picDice1.Source = SelectRDicesImage(Dices[0]);
+                if(Lock[0] = !Lock[0])
+                    this.picDice1.Opacity = 0.5;
+                else
+                    this.picDice1.Opacity = 1;
             }
         }
 
@@ -195,8 +159,10 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                Lock[1] = !Lock[1];
-                this.picDice2.Source = SelectRDicesImage(Dices[1]);
+                if(Lock[1] = !Lock[1])
+                    this.picDice2.Opacity = 0.5;
+                else
+                    this.picDice2.Opacity = 1;
             }
         }
 
@@ -204,8 +170,10 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                Lock[2] = !Lock[2];
-                this.picDice3.Source = SelectRDicesImage(Dices[2]);
+                if(Lock[2] = !Lock[2])
+                    this.picDice3.Opacity = 0.5;
+                else
+                    this.picDice3.Opacity = 1;
             }
         }
 
@@ -213,8 +181,10 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                Lock[3] = !Lock[3];
-                this.picDice4.Source = SelectRDicesImage(Dices[3]);
+                if(Lock[3] = !Lock[3])
+                    this.picDice4.Opacity = 0.5;
+                else
+                    this.picDice4.Opacity = 1;
             }
         }
 
@@ -222,8 +192,10 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                Lock[4] = !Lock[4];
-                this.picDice5.Source = SelectRDicesImage(Dices[4]);
+                if (Lock[4] = !Lock[4])
+                    this.picDice5.Opacity = 0.5;
+                else
+                    this.picDice5.Opacity = 1;
             }
         }
 
@@ -235,22 +207,7 @@ namespace Yatzee2
             if (Total == 0)
             {
                 //MessageBox.Show("!!\nPlease click on New game.", "Attention");
-                /*
                 
-                // Create the message dialog and set its content
-                var messageDialog = new Windows.UI.Popups.MessageDialog(loader.GetString("PartyIsOver"));
-
-                // Add commands and set their callbacks; both buttons use the same callback function instead of inline event handlers
-                //messageDialog.Commands.Add(new UICommand("Close", null)));
-
-                // Set the command that will be invoked by default
-                messageDialog.DefaultCommandIndex = 0;
-
-                // Set the command to be invoked when escape is pressed
-                messageDialog.CancelCommandIndex = 1;
-
-                // Show the message dialog
-                await messageDialog.ShowAsync();*/
 
                 //return;
             }
@@ -295,17 +252,24 @@ namespace Yatzee2
             textDescendingBonus.Text = "Bonus : " + DescendingBonus.ToString();
             textDescendingTotal.Text = "Total : " + DescendingTotal.ToString();
 
+            labelDicesTotal.Text = "Total : ";
+
             int BigTotal = NormalTotal + AscendingTotal + DescendingTotal;
             textGrandTotal.Text = "Score = " + BigTotal.ToString();
 
             this.Roll_Dices.IsEnabled = true;
 
-            //Reset dices
-            /*picDice1.Image = Properties.Resources.BBlank;
-            picDice2.Image = Properties.Resources.BBlank;
-            picDice3.Image = Properties.Resources.BBlank;
-            picDice4.Image = Properties.Resources.BBlank;
-            picDice5.Image = Properties.Resources.BBlank;*/
+            //Reset dices images
+            this.picDice1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
+            this.picDice2.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
+            this.picDice3.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
+            this.picDice4.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
+            this.picDice5.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
+            this.picDice1.Opacity = 1;
+            this.picDice2.Opacity = 1;
+            this.picDice3.Opacity = 1;
+            this.picDice4.Opacity = 1;
+            this.picDice5.Opacity = 1;
 
             //Reset infos
             this.labelRemainingLaunch.Text = "";
@@ -319,11 +283,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 0]) return;
 
-            this.Dice11.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice12.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice13.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice14.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice15.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice11.Source = SelectDicesImage(Dices[0]);
+            this.Dice12.Source = SelectDicesImage(Dices[1]);
+            this.Dice13.Source = SelectDicesImage(Dices[2]);
+            this.Dice14.Source = SelectDicesImage(Dices[3]);
+            this.Dice15.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -375,11 +339,11 @@ namespace Yatzee2
             if (Descending != 0) return;
             Descending++;
 
-            this.Dice141.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice142.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice143.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice144.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice145.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice141.Source = SelectDicesImage(Dices[0]);
+            this.Dice142.Source = SelectDicesImage(Dices[1]);
+            this.Dice143.Source = SelectDicesImage(Dices[2]);
+            this.Dice144.Source = SelectDicesImage(Dices[3]);
+            this.Dice145.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -430,11 +394,11 @@ namespace Yatzee2
             if (Played[2, 0]) return;
             if (Ascending != 0) return;
 
-            this.Dice271.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice272.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice273.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice274.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice275.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice271.Source = SelectDicesImage(Dices[0]);
+            this.Dice272.Source = SelectDicesImage(Dices[1]);
+            this.Dice273.Source = SelectDicesImage(Dices[2]);
+            this.Dice274.Source = SelectDicesImage(Dices[3]);
+            this.Dice275.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -485,11 +449,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 1]) return;
 
-            this.Dice21.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice22.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice23.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice24.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice25.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice21.Source = SelectDicesImage(Dices[0]);
+            this.Dice22.Source = SelectDicesImage(Dices[1]);
+            this.Dice23.Source = SelectDicesImage(Dices[2]);
+            this.Dice24.Source = SelectDicesImage(Dices[3]);
+            this.Dice25.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -541,11 +505,11 @@ namespace Yatzee2
             if (Descending != 1) return;
             Descending++;
 
-            this.Dice151.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice152.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice153.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice154.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice155.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice151.Source = SelectDicesImage(Dices[0]);
+            this.Dice152.Source = SelectDicesImage(Dices[1]);
+            this.Dice153.Source = SelectDicesImage(Dices[2]);
+            this.Dice154.Source = SelectDicesImage(Dices[3]);
+            this.Dice155.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -597,11 +561,11 @@ namespace Yatzee2
             if (Ascending != 1) return;
             Ascending--;
 
-            this.Dice281.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice282.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice283.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice284.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice285.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice281.Source = SelectDicesImage(Dices[0]);
+            this.Dice282.Source = SelectDicesImage(Dices[1]);
+            this.Dice283.Source = SelectDicesImage(Dices[2]);
+            this.Dice284.Source = SelectDicesImage(Dices[3]);
+            this.Dice285.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -652,11 +616,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 2]) return;
 
-            this.Dice31.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice32.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice33.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice34.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice35.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice31.Source = SelectDicesImage(Dices[0]);
+            this.Dice32.Source = SelectDicesImage(Dices[1]);
+            this.Dice33.Source = SelectDicesImage(Dices[2]);
+            this.Dice34.Source = SelectDicesImage(Dices[3]);
+            this.Dice35.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -708,11 +672,11 @@ namespace Yatzee2
             if (Descending != 2) return;
             Descending++;
 
-            this.Dice161.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice162.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice163.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice164.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice165.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice161.Source = SelectDicesImage(Dices[0]);
+            this.Dice162.Source = SelectDicesImage(Dices[1]);
+            this.Dice163.Source = SelectDicesImage(Dices[2]);
+            this.Dice164.Source = SelectDicesImage(Dices[3]);
+            this.Dice165.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -764,11 +728,11 @@ namespace Yatzee2
             if (Ascending != 2) return;
             Ascending--;
 
-            this.Dice291.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice292.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice293.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice294.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice295.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice291.Source = SelectDicesImage(Dices[0]);
+            this.Dice292.Source = SelectDicesImage(Dices[1]);
+            this.Dice293.Source = SelectDicesImage(Dices[2]);
+            this.Dice294.Source = SelectDicesImage(Dices[3]);
+            this.Dice295.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -819,11 +783,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 3]) return;
 
-            this.Dice41.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice42.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice43.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice44.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice45.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice41.Source = SelectDicesImage(Dices[0]);
+            this.Dice42.Source = SelectDicesImage(Dices[1]);
+            this.Dice43.Source = SelectDicesImage(Dices[2]);
+            this.Dice44.Source = SelectDicesImage(Dices[3]);
+            this.Dice45.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -875,11 +839,11 @@ namespace Yatzee2
             if (Descending != 3) return;
             Descending++;
 
-            this.Dice171.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice172.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice173.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice174.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice175.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice171.Source = SelectDicesImage(Dices[0]);
+            this.Dice172.Source = SelectDicesImage(Dices[1]);
+            this.Dice173.Source = SelectDicesImage(Dices[2]);
+            this.Dice174.Source = SelectDicesImage(Dices[3]);
+            this.Dice175.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -931,11 +895,11 @@ namespace Yatzee2
             if (Ascending != 3) return;
             Ascending--;
 
-            this.Dice301.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice302.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice303.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice304.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice305.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice301.Source = SelectDicesImage(Dices[0]);
+            this.Dice302.Source = SelectDicesImage(Dices[1]);
+            this.Dice303.Source = SelectDicesImage(Dices[2]);
+            this.Dice304.Source = SelectDicesImage(Dices[3]);
+            this.Dice305.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -986,11 +950,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 4]) return;
 
-            this.Dice51.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice52.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice53.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice54.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice55.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice51.Source = SelectDicesImage(Dices[0]);
+            this.Dice52.Source = SelectDicesImage(Dices[1]);
+            this.Dice53.Source = SelectDicesImage(Dices[2]);
+            this.Dice54.Source = SelectDicesImage(Dices[3]);
+            this.Dice55.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1042,11 +1006,11 @@ namespace Yatzee2
             if (Descending != 4) return;
             Descending++;
 
-            this.Dice181.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice182.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice183.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice184.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice185.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice181.Source = SelectDicesImage(Dices[0]);
+            this.Dice182.Source = SelectDicesImage(Dices[1]);
+            this.Dice183.Source = SelectDicesImage(Dices[2]);
+            this.Dice184.Source = SelectDicesImage(Dices[3]);
+            this.Dice185.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1098,11 +1062,11 @@ namespace Yatzee2
             if (Ascending != 4) return;
             Ascending--;
 
-            this.Dice311.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice312.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice313.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice314.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice315.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice311.Source = SelectDicesImage(Dices[0]);
+            this.Dice312.Source = SelectDicesImage(Dices[1]);
+            this.Dice313.Source = SelectDicesImage(Dices[2]);
+            this.Dice314.Source = SelectDicesImage(Dices[3]);
+            this.Dice315.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1153,11 +1117,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 5]) return;
 
-            this.Dice61.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice62.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice63.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice64.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice65.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice61.Source = SelectDicesImage(Dices[0]);
+            this.Dice62.Source = SelectDicesImage(Dices[1]);
+            this.Dice63.Source = SelectDicesImage(Dices[2]);
+            this.Dice64.Source = SelectDicesImage(Dices[3]);
+            this.Dice65.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1209,11 +1173,11 @@ namespace Yatzee2
             if (Descending != 5) return;
             Descending++;
 
-            this.Dice191.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice192.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice193.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice194.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice195.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice191.Source = SelectDicesImage(Dices[0]);
+            this.Dice192.Source = SelectDicesImage(Dices[1]);
+            this.Dice193.Source = SelectDicesImage(Dices[2]);
+            this.Dice194.Source = SelectDicesImage(Dices[3]);
+            this.Dice195.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1265,11 +1229,11 @@ namespace Yatzee2
             if (Ascending != 5) return;
             Ascending--;
 
-            this.Dice321.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice322.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice323.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice324.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice325.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice321.Source = SelectDicesImage(Dices[0]);
+            this.Dice322.Source = SelectDicesImage(Dices[1]);
+            this.Dice323.Source = SelectDicesImage(Dices[2]);
+            this.Dice324.Source = SelectDicesImage(Dices[3]);
+            this.Dice325.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1320,11 +1284,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 6]) return;
 
-            this.Dice71.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice72.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice73.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice74.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice75.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice71.Source = SelectDicesImage(Dices[0]);
+            this.Dice72.Source = SelectDicesImage(Dices[1]);
+            this.Dice73.Source = SelectDicesImage(Dices[2]);
+            this.Dice74.Source = SelectDicesImage(Dices[3]);
+            this.Dice75.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1384,11 +1348,11 @@ namespace Yatzee2
             if (Descending != 6) return;
             Descending++;
 
-            this.Dice201.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice202.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice203.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice204.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice205.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice201.Source = SelectDicesImage(Dices[0]);
+            this.Dice202.Source = SelectDicesImage(Dices[1]);
+            this.Dice203.Source = SelectDicesImage(Dices[2]);
+            this.Dice204.Source = SelectDicesImage(Dices[3]);
+            this.Dice205.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1448,11 +1412,11 @@ namespace Yatzee2
             if (Ascending != 6) return;
             Ascending--;
 
-            this.Dice331.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice332.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice333.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice334.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice335.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice331.Source = SelectDicesImage(Dices[0]);
+            this.Dice332.Source = SelectDicesImage(Dices[1]);
+            this.Dice333.Source = SelectDicesImage(Dices[2]);
+            this.Dice334.Source = SelectDicesImage(Dices[3]);
+            this.Dice335.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1511,11 +1475,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 7]) return;
 
-            this.Dice81.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice82.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice83.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice84.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice85.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice81.Source = SelectDicesImage(Dices[0]);
+            this.Dice82.Source = SelectDicesImage(Dices[1]);
+            this.Dice83.Source = SelectDicesImage(Dices[2]);
+            this.Dice84.Source = SelectDicesImage(Dices[3]);
+            this.Dice85.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1580,11 +1544,11 @@ namespace Yatzee2
             if (Descending != 7) return;
             Descending++;
 
-            this.Dice211.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice212.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice213.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice214.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice215.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice211.Source = SelectDicesImage(Dices[0]);
+            this.Dice212.Source = SelectDicesImage(Dices[1]);
+            this.Dice213.Source = SelectDicesImage(Dices[2]);
+            this.Dice214.Source = SelectDicesImage(Dices[3]);
+            this.Dice215.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1649,11 +1613,11 @@ namespace Yatzee2
             if (Ascending != 7) return;
             Ascending--;
 
-            this.Dice341.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice342.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice343.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice344.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice345.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice341.Source = SelectDicesImage(Dices[0]);
+            this.Dice342.Source = SelectDicesImage(Dices[1]);
+            this.Dice343.Source = SelectDicesImage(Dices[2]);
+            this.Dice344.Source = SelectDicesImage(Dices[3]);
+            this.Dice345.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1717,11 +1681,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 8]) return;
 
-            this.Dice91.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice92.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice93.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice94.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice95.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice91.Source = SelectDicesImage(Dices[0]);
+            this.Dice92.Source = SelectDicesImage(Dices[1]);
+            this.Dice93.Source = SelectDicesImage(Dices[2]);
+            this.Dice94.Source = SelectDicesImage(Dices[3]);
+            this.Dice95.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1787,11 +1751,11 @@ namespace Yatzee2
             if (Descending != 8) return;
             Descending++;
 
-            this.Dice221.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice222.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice223.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice224.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice225.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice221.Source = SelectDicesImage(Dices[0]);
+            this.Dice222.Source = SelectDicesImage(Dices[1]);
+            this.Dice223.Source = SelectDicesImage(Dices[2]);
+            this.Dice224.Source = SelectDicesImage(Dices[3]);
+            this.Dice225.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1857,11 +1821,11 @@ namespace Yatzee2
             if (Ascending != 8) return;
             Ascending--;
 
-            this.Dice351.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice352.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice353.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice354.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice355.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice351.Source = SelectDicesImage(Dices[0]);
+            this.Dice352.Source = SelectDicesImage(Dices[1]);
+            this.Dice353.Source = SelectDicesImage(Dices[2]);
+            this.Dice354.Source = SelectDicesImage(Dices[3]);
+            this.Dice355.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1926,11 +1890,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 9]) return;
 
-            this.Dice101.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice102.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice103.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice104.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice105.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice101.Source = SelectDicesImage(Dices[0]);
+            this.Dice102.Source = SelectDicesImage(Dices[1]);
+            this.Dice103.Source = SelectDicesImage(Dices[2]);
+            this.Dice104.Source = SelectDicesImage(Dices[3]);
+            this.Dice105.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -1992,11 +1956,11 @@ namespace Yatzee2
             if (Descending != 9) return;
             Descending++;
 
-            this.Dice231.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice232.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice233.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice234.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice235.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice231.Source = SelectDicesImage(Dices[0]);
+            this.Dice232.Source = SelectDicesImage(Dices[1]);
+            this.Dice233.Source = SelectDicesImage(Dices[2]);
+            this.Dice234.Source = SelectDicesImage(Dices[3]);
+            this.Dice235.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2058,11 +2022,11 @@ namespace Yatzee2
             if (Ascending != 9) return;
             Ascending--;
 
-            this.Dice361.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice362.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice363.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice364.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice365.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice361.Source = SelectDicesImage(Dices[0]);
+            this.Dice362.Source = SelectDicesImage(Dices[1]);
+            this.Dice363.Source = SelectDicesImage(Dices[2]);
+            this.Dice364.Source = SelectDicesImage(Dices[3]);
+            this.Dice365.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2123,11 +2087,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 10]) return;
 
-            this.Dice111.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice112.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice113.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice114.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice115.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice111.Source = SelectDicesImage(Dices[0]);
+            this.Dice112.Source = SelectDicesImage(Dices[1]);
+            this.Dice113.Source = SelectDicesImage(Dices[2]);
+            this.Dice114.Source = SelectDicesImage(Dices[3]);
+            this.Dice115.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2200,11 +2164,11 @@ namespace Yatzee2
             if (Descending != 10) return;
             Descending++;
 
-            this.Dice241.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice242.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice243.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice244.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice245.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice241.Source = SelectDicesImage(Dices[0]);
+            this.Dice242.Source = SelectDicesImage(Dices[1]);
+            this.Dice243.Source = SelectDicesImage(Dices[2]);
+            this.Dice244.Source = SelectDicesImage(Dices[3]);
+            this.Dice245.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2277,11 +2241,11 @@ namespace Yatzee2
             if (Ascending != 10) return;
             Ascending--;
 
-            this.Dice371.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice372.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice373.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice374.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice375.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice371.Source = SelectDicesImage(Dices[0]);
+            this.Dice372.Source = SelectDicesImage(Dices[1]);
+            this.Dice373.Source = SelectDicesImage(Dices[2]);
+            this.Dice374.Source = SelectDicesImage(Dices[3]);
+            this.Dice375.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2353,11 +2317,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 11]) return;
 
-            this.Dice121.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice122.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice123.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice124.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice125.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice121.Source = SelectDicesImage(Dices[0]);
+            this.Dice122.Source = SelectDicesImage(Dices[1]);
+            this.Dice123.Source = SelectDicesImage(Dices[2]);
+            this.Dice124.Source = SelectDicesImage(Dices[3]);
+            this.Dice125.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2437,11 +2401,11 @@ namespace Yatzee2
             if (Descending != 11) return;
             Descending++;
 
-            this.Dice251.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice252.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice253.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice254.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice255.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice251.Source = SelectDicesImage(Dices[0]);
+            this.Dice252.Source = SelectDicesImage(Dices[1]);
+            this.Dice253.Source = SelectDicesImage(Dices[2]);
+            this.Dice254.Source = SelectDicesImage(Dices[3]);
+            this.Dice255.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2521,11 +2485,11 @@ namespace Yatzee2
             if (Ascending != 11) return;
             Ascending--;
 
-            this.Dice381.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice382.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice383.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice384.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice385.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice381.Source = SelectDicesImage(Dices[0]);
+            this.Dice382.Source = SelectDicesImage(Dices[1]);
+            this.Dice383.Source = SelectDicesImage(Dices[2]);
+            this.Dice384.Source = SelectDicesImage(Dices[3]);
+            this.Dice385.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2604,11 +2568,11 @@ namespace Yatzee2
             else return;
             if (Played[0, 12]) return;
 
-            this.Dice131.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice132.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice133.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice134.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice135.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice131.Source = SelectDicesImage(Dices[0]);
+            this.Dice132.Source = SelectDicesImage(Dices[1]);
+            this.Dice133.Source = SelectDicesImage(Dices[2]);
+            this.Dice134.Source = SelectDicesImage(Dices[3]);
+            this.Dice135.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2670,11 +2634,11 @@ namespace Yatzee2
             if (Descending != 12) return;
             Descending++;
 
-            this.Dice261.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice262.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice263.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice264.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice265.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice261.Source = SelectDicesImage(Dices[0]);
+            this.Dice262.Source = SelectDicesImage(Dices[1]);
+            this.Dice263.Source = SelectDicesImage(Dices[2]);
+            this.Dice264.Source = SelectDicesImage(Dices[3]);
+            this.Dice265.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;
@@ -2737,11 +2701,11 @@ namespace Yatzee2
             if (Ascending != 12) return;
             Ascending--;
 
-            this.Dice391.Source = SelectSmallDicesImage(Dices[0]);
-            this.Dice392.Source = SelectSmallDicesImage(Dices[1]);
-            this.Dice393.Source = SelectSmallDicesImage(Dices[2]);
-            this.Dice394.Source = SelectSmallDicesImage(Dices[3]);
-            this.Dice395.Source = SelectSmallDicesImage(Dices[4]);
+            this.Dice391.Source = SelectDicesImage(Dices[0]);
+            this.Dice392.Source = SelectDicesImage(Dices[1]);
+            this.Dice393.Source = SelectDicesImage(Dices[2]);
+            this.Dice394.Source = SelectDicesImage(Dices[3]);
+            this.Dice395.Source = SelectDicesImage(Dices[4]);
 
             //Calc score
             int Temp = 0;

@@ -111,6 +111,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -148,12 +149,6 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\BBlank.png" />
     <Content Include="Assets\Blank.png" />
-    <Content Include="Assets\Dice1S.png" />
-    <Content Include="Assets\Dice2S.png" />
-    <Content Include="Assets\Dice3S.png" />
-    <Content Include="Assets\Dice4S.png" />
-    <Content Include="Assets\Dice5S.png" />
-    <Content Include="Assets\Dice6S.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
