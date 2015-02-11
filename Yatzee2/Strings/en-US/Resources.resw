@@ -237,4 +237,10 @@
   <data name="TitleStr" xml:space="preserve">
     <value>Yatzee</value>
   </data>
+  <data name="EndOfGame" xml:space="preserve">
+    <value>Party is over, final score</value>
+  </data>
+  <data name="RestartGame" xml:space="preserve">
+    <value>Click here to restart a game</value>
+  </data>
 </root>

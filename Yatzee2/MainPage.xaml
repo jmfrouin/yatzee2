@@ -373,6 +373,5 @@
             <TextBlock x:Name="labelDicesTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Total : " VerticalAlignment="Top" FontSize="24"/>
             <TextBlock x:Name="textGrandTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Grand Total : " VerticalAlignment="Top" FontSize="24"/>
         </StackPanel>
-        
     </Grid>
 </Page>

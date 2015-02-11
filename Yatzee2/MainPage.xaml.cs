@@ -72,7 +72,7 @@ namespace Yatzee2
             Total = 39;
             Ascending = 12;
             Descending = 0;
-            ShootAgain = true;
+            ShootAgain = false;
             rndNumbers = new Random();
             //Set Background colors
             //BackColor = Color.Lavender;
@@ -101,6 +101,21 @@ namespace Yatzee2
 
         private void Roll_Dices_Button_Click(object sender, RoutedEventArgs e)
         {
+            if(Total == 0)
+            {
+                Reset();
+                return;
+            }
+
+            if(Nb == 3)
+            {
+                picDice1.Opacity = 1;
+                picDice2.Opacity = 1;
+                picDice3.Opacity = 1;
+                picDice4.Opacity = 1;
+                picDice5.Opacity = 1;
+            }
+
             if (Nb > 0)
             {
                 Fix = true;
@@ -148,7 +163,7 @@ namespace Yatzee2
         {
             if (Fix)
             {
-                if(Lock[0] = !Lock[0])
+                if (Lock[0] = !Lock[0])
                     this.picDice1.Opacity = 0.5;
                 else
                     this.picDice1.Opacity = 1;
@@ -204,13 +219,6 @@ namespace Yatzee2
             var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
             Nb = 3;
             Total--;
-            if (Total == 0)
-            {
-                //MessageBox.Show("!!\nPlease click on New game.", "Attention");
-                
-
-                //return;
-            }
 
             for (int i = 0; i < 5; i++)
             {
@@ -260,20 +268,25 @@ namespace Yatzee2
             this.Roll_Dices.IsEnabled = true;
 
             //Reset dices images
-            this.picDice1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
-            this.picDice2.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
-            this.picDice3.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
-            this.picDice4.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
-            this.picDice5.Source = new BitmapImage(new Uri("ms-appx:///Assets/Blank.png"));
-            this.picDice1.Opacity = 1;
-            this.picDice2.Opacity = 1;
-            this.picDice3.Opacity = 1;
-            this.picDice4.Opacity = 1;
-            this.picDice5.Opacity = 1;
+            picDice1.Opacity = 0;
+            picDice2.Opacity = 0;
+            picDice3.Opacity = 0;
+            picDice4.Opacity = 0;
+            picDice5.Opacity = 0;
 
             //Reset infos
             this.labelRemainingLaunch.Text = "";
             this.labelDicesTotal.Text = "";
+
+            if (Total == 0)
+            {
+                //MessageBox.Show("!!\nPlease click on New game.", "Attention");
+                this.Roll_Dices.Content = loader.GetString("RestartGame");
+                
+                //this.Roll_Dices.IsEnabled = false;
+                labelRemainingLaunch.Text = loader.GetString("EndOfGame") + " : " + BigTotal.ToString();
+                labelDicesTotal.Text = "";
+            }
         }
 
         #region ScoreNormalOnes
@@ -333,10 +346,10 @@ namespace Yatzee2
         #region ScoreDescOnes
         private void ScoreDescOnes()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 0]) return;
             if (Descending != 0) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice141.Source = SelectDicesImage(Dices[0]);
@@ -389,11 +402,11 @@ namespace Yatzee2
         #region ScoreAscOnes
         private void ScoreAscOnes()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 0]) return;
             if (Ascending != 0) return;
-
+            if (ShootAgain) ShootAgain = false;
+            else return;
+            
             this.Dice271.Source = SelectDicesImage(Dices[0]);
             this.Dice272.Source = SelectDicesImage(Dices[1]);
             this.Dice273.Source = SelectDicesImage(Dices[2]);
@@ -499,10 +512,10 @@ namespace Yatzee2
         #region ScoreDescTwos
         private void ScoreDescTwos()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 1]) return;
             if (Descending != 1) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice151.Source = SelectDicesImage(Dices[0]);
@@ -555,10 +568,10 @@ namespace Yatzee2
         #region ScoreAscTwos
         private void ScoreAscTwos()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 1]) return;
             if (Ascending != 1) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice281.Source = SelectDicesImage(Dices[0]);
@@ -666,10 +679,10 @@ namespace Yatzee2
         #region ScoreDescThrees
         private void ScoreDescThrees()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 2]) return;
             if (Descending != 2) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice161.Source = SelectDicesImage(Dices[0]);
@@ -722,10 +735,10 @@ namespace Yatzee2
         #region ScoreAscThrees
         private void ScoreAscThrees()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 2]) return;
             if (Ascending != 2) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice291.Source = SelectDicesImage(Dices[0]);
@@ -833,10 +846,10 @@ namespace Yatzee2
         #region ScoreDescFours
         private void ScoreDescFours()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 3]) return;
             if (Descending != 3) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice171.Source = SelectDicesImage(Dices[0]);
@@ -889,10 +902,10 @@ namespace Yatzee2
         #region ScoreAscFours
         private void ScoreAscFours()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 3]) return;
             if (Ascending != 3) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice301.Source = SelectDicesImage(Dices[0]);
@@ -1000,10 +1013,10 @@ namespace Yatzee2
         #region ScoreDescFives
         private void ScoreDescFives()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 4]) return;
             if (Descending != 4) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice181.Source = SelectDicesImage(Dices[0]);
@@ -1056,10 +1069,10 @@ namespace Yatzee2
         #region ScoreAscFives
         private void ScoreAscFives()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 4]) return;
             if (Ascending != 4) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice311.Source = SelectDicesImage(Dices[0]);
@@ -1167,10 +1180,10 @@ namespace Yatzee2
         #region ScoreDescSixs
         private void ScoreDescSixs()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 5]) return;
             if (Descending != 5) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice191.Source = SelectDicesImage(Dices[0]);
@@ -1223,10 +1236,10 @@ namespace Yatzee2
         #region ScoreAscSixs
         private void ScoreAscSixs()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 5]) return;
             if (Ascending != 5) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice321.Source = SelectDicesImage(Dices[0]);
@@ -1342,10 +1355,10 @@ namespace Yatzee2
         #region ScoreDescLess11
         private void ScoreDescLess11()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 6]) return;
             if (Descending != 6) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice201.Source = SelectDicesImage(Dices[0]);
@@ -1406,10 +1419,10 @@ namespace Yatzee2
         #region ScoreAscLess11
         private void ScoreAscLess11()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 6]) return;
             if (Ascending != 6) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice331.Source = SelectDicesImage(Dices[0]);
@@ -1538,10 +1551,10 @@ namespace Yatzee2
         #region ScoreDescSmall
         private void ScoreDescSmall()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 7]) return;
             if (Descending != 7) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice211.Source = SelectDicesImage(Dices[0]);
@@ -1557,7 +1570,7 @@ namespace Yatzee2
                 Temp += Dices[i];
             }
 
-            if (!Played[0, 8])
+            if (!Played[1, 8])
             {
                 DescendingSmallScore = Temp;
                 DescendingSubTotal2 += DescendingSmallScore;
@@ -1607,10 +1620,10 @@ namespace Yatzee2
         #region ScoreAscSmall
         private void ScoreAscSmall()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 7]) return;
             if (Ascending != 7) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice341.Source = SelectDicesImage(Dices[0]);
@@ -1626,7 +1639,7 @@ namespace Yatzee2
                 Temp += Dices[i];
             }
 
-            if (!Played[0, 8])
+            if (!Played[2, 8])
             {
                 AscendingSmallScore = Temp;
                 AscendingSubTotal2 += AscendingSmallScore;
@@ -1745,10 +1758,10 @@ namespace Yatzee2
         #region ScoreDescBigger
         private void ScoreDescBigger()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 8]) return;
             if (Descending != 8) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice221.Source = SelectDicesImage(Dices[0]);
@@ -1815,10 +1828,10 @@ namespace Yatzee2
         #region ScoreAscBigger
         private void ScoreAscBigger()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 8]) return;
             if (Ascending != 8) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice351.Source = SelectDicesImage(Dices[0]);
@@ -1950,10 +1963,10 @@ namespace Yatzee2
         #region ScoreDescFourOfAKind
         private void ScoreDescFourOfAKind()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 9]) return;
             if (Descending != 9) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice231.Source = SelectDicesImage(Dices[0]);
@@ -2016,10 +2029,10 @@ namespace Yatzee2
         #region ScoreAscFourOfAKind
         private void ScoreAscFourOfAKind()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 9]) return;
             if (Ascending != 9) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice361.Source = SelectDicesImage(Dices[0]);
@@ -2158,10 +2171,10 @@ namespace Yatzee2
         #region ScoreDescFullHousse
         private void ScoreDescFullHousse()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 10]) return;
             if (Descending != 10) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice241.Source = SelectDicesImage(Dices[0]);
@@ -2235,10 +2248,10 @@ namespace Yatzee2
         #region ScoreAscFullHousse
         private void ScoreAscFullHousse()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 10]) return;
             if (Ascending != 10) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice371.Source = SelectDicesImage(Dices[0]);
@@ -2395,10 +2408,10 @@ namespace Yatzee2
         #region ScoreDescStraight
         private void ScoreDescStraight()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 11]) return;
             if (Descending != 11) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice251.Source = SelectDicesImage(Dices[0]);
@@ -2479,10 +2492,10 @@ namespace Yatzee2
         #region ScoreAscStraight
         private void ScoreAscStraight()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[2, 11]) return;
             if (Ascending != 11) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice381.Source = SelectDicesImage(Dices[0]);
@@ -2628,10 +2641,10 @@ namespace Yatzee2
         #region ScoreDescYatzee
         private void ScoreDescYatzee()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
             if (Played[1, 12]) return;
             if (Descending != 12) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Descending++;
 
             this.Dice261.Source = SelectDicesImage(Dices[0]);
@@ -2694,11 +2707,10 @@ namespace Yatzee2
         #region ScoreAscYatzee
         private void ScoreAscYatzee()
         {
-            if (ShootAgain) ShootAgain = false;
-            else return;
-
             if (Played[2, 12]) return;
             if (Ascending != 12) return;
+            if (ShootAgain) ShootAgain = false;
+            else return;
             Ascending--;
 
             this.Dice391.Source = SelectDicesImage(Dices[0]);
